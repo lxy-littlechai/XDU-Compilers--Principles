@@ -1,6 +1,6 @@
-E:/University/Coding Space/Plotter_interpreter/cmake-build-debug/CMakeFiles/edit_cache.dir
-E:/University/Coding Space/Plotter_interpreter/cmake-build-debug/CMakeFiles/Plotter_interpreter.dir
-E:/University/Coding Space/Plotter_interpreter/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-E:/University/Coding Space/Plotter_interpreter/cmake-build-debug/Scanner/CMakeFiles/rebuild_cache.dir
-E:/University/Coding Space/Plotter_interpreter/cmake-build-debug/Scanner/CMakeFiles/Scanner.dir
-E:/University/Coding Space/Plotter_interpreter/cmake-build-debug/Scanner/CMakeFiles/edit_cache.dir
+E:/University/Coding Space/XDU-Compilers--Principles/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/University/Coding Space/XDU-Compilers--Principles/cmake-build-debug/CMakeFiles/Plotter_interpreter.dir
+E:/University/Coding Space/XDU-Compilers--Principles/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+E:/University/Coding Space/XDU-Compilers--Principles/cmake-build-debug/Scanner/CMakeFiles/rebuild_cache.dir
+E:/University/Coding Space/XDU-Compilers--Principles/cmake-build-debug/Scanner/CMakeFiles/Scanner.dir
+E:/University/Coding Space/XDU-Compilers--Principles/cmake-build-debug/Scanner/CMakeFiles/edit_cache.dir

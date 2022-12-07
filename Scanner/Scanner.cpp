@@ -25,10 +25,9 @@ void Scanner::init_scanner(std::string fileName) {
 void Scanner::start_scanner() {
     Token token;
     std::cout.width(8);
-    std::cout <<  std::setw(20) << "记号类别"
+    std::cout << std::setw(20) << "记号类别"
               << std::setw(20) << "字符串"
               << std::setw(20) << "常数值"
-              << std::setw(20) <<"函数指针"
               << std::endl;
     while(true) {
         token = getToken();
@@ -37,7 +36,6 @@ void Scanner::start_scanner() {
             std::cout << std::setw(20) << token.tokenType
                       << std::setw(20) << token.token
                       << std::setw(20) << token.value
-                      << std::setw(20) << &token.func
                       << std::endl;
         }
         else {

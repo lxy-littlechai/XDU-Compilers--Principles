@@ -1,5 +1,5 @@
 rot is 0;
-origin is (50,400);
+origin is (pi,400);
 //scale is (2,1);
 for T from 0 to 300 step 1 draw (t,0);
 for T from 0 to 300 step 1 draw (0,-t);

@@ -39,13 +39,13 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = E$:/University/Coding$ Space/Plotter_interpreter/cmake-build-debug/
+cmake_ninja_workdir = E$:/University/Coding$ Space/XDU-Compilers--Principles/cmake-build-debug/
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "E:\University\Coding Space\Plotter_interpreter\cmake-build-debug" && "D:\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "E:\University\Coding Space\XDU-Compilers--Principles\cmake-build-debug" && "D:\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -60,13 +60,13 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 
 build cmake_object_order_depends_target_Plotter_interpreter: phony || CMakeFiles/Plotter_interpreter.dir
 
-build CMakeFiles/Plotter_interpreter.dir/main.cpp.obj: CXX_COMPILER__Plotter_interpreter_Debug E$:/University/Coding$ Space/Plotter_interpreter/main.cpp || cmake_object_order_depends_target_Plotter_interpreter
+build CMakeFiles/Plotter_interpreter.dir/main.cpp.obj: CXX_COMPILER__Plotter_interpreter_Debug E$:/University/Coding$ Space/XDU-Compilers--Principles/main.cpp || cmake_object_order_depends_target_Plotter_interpreter
   DEP_FILE = CMakeFiles\Plotter_interpreter.dir\main.cpp.obj.d
   FLAGS = -g -std=gnu++2a
   OBJECT_DIR = CMakeFiles\Plotter_interpreter.dir
   OBJECT_FILE_DIR = CMakeFiles\Plotter_interpreter.dir
 
-build CMakeFiles/Plotter_interpreter.dir/ExceptionLog/ExceptionLog.cpp.obj: CXX_COMPILER__Plotter_interpreter_Debug E$:/University/Coding$ Space/Plotter_interpreter/ExceptionLog/ExceptionLog.cpp || cmake_object_order_depends_target_Plotter_interpreter
+build CMakeFiles/Plotter_interpreter.dir/ExceptionLog/ExceptionLog.cpp.obj: CXX_COMPILER__Plotter_interpreter_Debug E$:/University/Coding$ Space/XDU-Compilers--Principles/ExceptionLog/ExceptionLog.cpp || cmake_object_order_depends_target_Plotter_interpreter
   DEP_FILE = CMakeFiles\Plotter_interpreter.dir\ExceptionLog\ExceptionLog.cpp.obj.d
   FLAGS = -g -std=gnu++2a
   OBJECT_DIR = CMakeFiles\Plotter_interpreter.dir
@@ -95,7 +95,7 @@ build Plotter_interpreter.exe: CXX_EXECUTABLE_LINKER__Plotter_interpreter_Debug 
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "E:\University\Coding Space\Plotter_interpreter\cmake-build-debug" && "D:\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"E:\University\Coding Space\Plotter_interpreter" -B"E:\University\Coding Space\Plotter_interpreter\cmake-build-debug""
+  COMMAND = cmd.exe /C "cd /D "E:\University\Coding Space\XDU-Compilers--Principles\cmake-build-debug" && "D:\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"E:\University\Coding Space\XDU-Compilers--Principles" -B"E:\University\Coding Space\XDU-Compilers--Principles\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -104,7 +104,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# E:/University/Coding Space/Plotter_interpreter/CMakeLists.txt
+# E:/University/Coding Space/XDU-Compilers--Principles/CMakeLists.txt
 # =============================================================================
 
 
@@ -112,7 +112,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Utility command for rebuild_cache
 
 build Scanner/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "E:\University\Coding Space\Plotter_interpreter\cmake-build-debug\Scanner" && "D:\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"E:\University\Coding Space\Plotter_interpreter" -B"E:\University\Coding Space\Plotter_interpreter\cmake-build-debug""
+  COMMAND = cmd.exe /C "cd /D "E:\University\Coding Space\XDU-Compilers--Principles\cmake-build-debug\Scanner" && "D:\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"E:\University\Coding Space\XDU-Compilers--Principles" -B"E:\University\Coding Space\XDU-Compilers--Principles\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -128,25 +128,19 @@ build Scanner/rebuild_cache: phony Scanner/CMakeFiles/rebuild_cache.util
 
 build cmake_object_order_depends_target_Scanner: phony || Scanner/CMakeFiles/Scanner.dir
 
-build Scanner/CMakeFiles/Scanner.dir/main.cpp.obj: CXX_COMPILER__Scanner_Debug E$:/University/Coding$ Space/Plotter_interpreter/Scanner/main.cpp || cmake_object_order_depends_target_Scanner
+build Scanner/CMakeFiles/Scanner.dir/main.cpp.obj: CXX_COMPILER__Scanner_Debug E$:/University/Coding$ Space/XDU-Compilers--Principles/Scanner/main.cpp || cmake_object_order_depends_target_Scanner
   DEP_FILE = Scanner\CMakeFiles\Scanner.dir\main.cpp.obj.d
   FLAGS = -g -std=gnu++2a
   OBJECT_DIR = Scanner\CMakeFiles\Scanner.dir
   OBJECT_FILE_DIR = Scanner\CMakeFiles\Scanner.dir
 
-build Scanner/CMakeFiles/Scanner.dir/Token.cpp.obj: CXX_COMPILER__Scanner_Debug E$:/University/Coding$ Space/Plotter_interpreter/Scanner/Token.cpp || cmake_object_order_depends_target_Scanner
+build Scanner/CMakeFiles/Scanner.dir/Token.cpp.obj: CXX_COMPILER__Scanner_Debug E$:/University/Coding$ Space/XDU-Compilers--Principles/Scanner/Token.cpp || cmake_object_order_depends_target_Scanner
   DEP_FILE = Scanner\CMakeFiles\Scanner.dir\Token.cpp.obj.d
   FLAGS = -g -std=gnu++2a
   OBJECT_DIR = Scanner\CMakeFiles\Scanner.dir
   OBJECT_FILE_DIR = Scanner\CMakeFiles\Scanner.dir
 
-build Scanner/CMakeFiles/Scanner.dir/Func.cpp.obj: CXX_COMPILER__Scanner_Debug E$:/University/Coding$ Space/Plotter_interpreter/Scanner/Func.cpp || cmake_object_order_depends_target_Scanner
-  DEP_FILE = Scanner\CMakeFiles\Scanner.dir\Func.cpp.obj.d
-  FLAGS = -g -std=gnu++2a
-  OBJECT_DIR = Scanner\CMakeFiles\Scanner.dir
-  OBJECT_FILE_DIR = Scanner\CMakeFiles\Scanner.dir
-
-build Scanner/CMakeFiles/Scanner.dir/Scanner.cpp.obj: CXX_COMPILER__Scanner_Debug E$:/University/Coding$ Space/Plotter_interpreter/Scanner/Scanner.cpp || cmake_object_order_depends_target_Scanner
+build Scanner/CMakeFiles/Scanner.dir/Scanner.cpp.obj: CXX_COMPILER__Scanner_Debug E$:/University/Coding$ Space/XDU-Compilers--Principles/Scanner/Scanner.cpp || cmake_object_order_depends_target_Scanner
   DEP_FILE = Scanner\CMakeFiles\Scanner.dir\Scanner.cpp.obj.d
   FLAGS = -g -std=gnu++2a
   OBJECT_DIR = Scanner\CMakeFiles\Scanner.dir
@@ -160,7 +154,7 @@ build Scanner/CMakeFiles/Scanner.dir/Scanner.cpp.obj: CXX_COMPILER__Scanner_Debu
 #############################################
 # Link the executable Scanner\Scanner.exe
 
-build Scanner/Scanner.exe: CXX_EXECUTABLE_LINKER__Scanner_Debug Scanner/CMakeFiles/Scanner.dir/main.cpp.obj Scanner/CMakeFiles/Scanner.dir/Token.cpp.obj Scanner/CMakeFiles/Scanner.dir/Func.cpp.obj Scanner/CMakeFiles/Scanner.dir/Scanner.cpp.obj
+build Scanner/Scanner.exe: CXX_EXECUTABLE_LINKER__Scanner_Debug Scanner/CMakeFiles/Scanner.dir/main.cpp.obj Scanner/CMakeFiles/Scanner.dir/Token.cpp.obj Scanner/CMakeFiles/Scanner.dir/Scanner.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = Scanner\CMakeFiles\Scanner.dir
@@ -175,7 +169,7 @@ build Scanner/Scanner.exe: CXX_EXECUTABLE_LINKER__Scanner_Debug Scanner/CMakeFil
 # Utility command for edit_cache
 
 build Scanner/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "E:\University\Coding Space\Plotter_interpreter\cmake-build-debug\Scanner" && "D:\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "E:\University\Coding Space\XDU-Compilers--Principles\cmake-build-debug\Scanner" && "D:\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -196,14 +190,14 @@ build Scanner.exe: phony Scanner/Scanner.exe
 # =============================================================================
 
 #############################################
-# Folder: E:/University/Coding Space/Plotter_interpreter/cmake-build-debug
+# Folder: E:/University/Coding Space/XDU-Compilers--Principles/cmake-build-debug
 
 build all: phony Plotter_interpreter.exe Scanner/all
 
 # =============================================================================
 
 #############################################
-# Folder: E:/University/Coding Space/Plotter_interpreter/cmake-build-debug/Scanner
+# Folder: E:/University/Coding Space/XDU-Compilers--Principles/cmake-build-debug/Scanner
 
 build Scanner/all: phony Scanner/Scanner.exe
 

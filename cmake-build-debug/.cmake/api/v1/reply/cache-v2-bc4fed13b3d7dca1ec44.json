@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "e:/University/Coding Space/Plotter_interpreter/cmake-build-debug"
+			"value" : "e:/University/Coding Space/XDU-Compilers--Principles/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -623,7 +623,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/University/Coding Space/Plotter_interpreter"
+			"value" : "E:/University/Coding Space/XDU-Compilers--Principles"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1230,42 +1230,6 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "Pl_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "E:/University/Coding Space/Plotter_interpreter/cmake-build-debug/Scanner"
-		},
-		{
-			"name" : "Pl_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "OFF"
-		},
-		{
-			"name" : "Pl_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "E:/University/Coding Space/Plotter_interpreter/Scanner"
-		},
-		{
 			"name" : "Plotter_interpreter_BINARY_DIR",
 			"properties" : 
 			[
@@ -1275,7 +1239,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/University/Coding Space/Plotter_interpreter/cmake-build-debug/Scanner"
+			"value" : "E:/University/Coding Space/XDU-Compilers--Principles/cmake-build-debug/Scanner"
 		},
 		{
 			"name" : "Plotter_interpreter_IS_TOP_LEVEL",
@@ -1299,43 +1263,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/University/Coding Space/Plotter_interpreter/Scanner"
-		},
-		{
-			"name" : "Scanner_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "E:/University/Coding Space/Plotter_interpreter/cmake-build-debug/Scanner"
-		},
-		{
-			"name" : "Scanner_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "OFF"
-		},
-		{
-			"name" : "Scanner_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "E:/University/Coding Space/Plotter_interpreter/Scanner"
+			"value" : "E:/University/Coding Space/XDU-Compilers--Principles/Scanner"
 		}
 	],
 	"kind" : "cache",

@@ -1,4 +1,4 @@
-# Install script for directory: E:/University/Coding Space/Plotter_interpreter/Scanner
+# Install script for directory: E:/University/Coding Space/XDU-Compilers--Principles/Scanner
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

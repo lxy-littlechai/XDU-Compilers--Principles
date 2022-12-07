@@ -67,7 +67,7 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "Scanner::@32a5743141a4970811cd",
-					"jsonFile" : "target-Scanner-Debug-b88eaa3c4e55a5555adb.json",
+					"jsonFile" : "target-Scanner-Debug-11cb9c6d456e65322094.json",
 					"name" : "Scanner",
 					"projectIndex" : 0
 				}
@@ -77,8 +77,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "E:/University/Coding Space/Plotter_interpreter/cmake-build-debug",
-		"source" : "E:/University/Coding Space/Plotter_interpreter"
+		"build" : "E:/University/Coding Space/XDU-Compilers--Principles/cmake-build-debug",
+		"source" : "E:/University/Coding Space/XDU-Compilers--Principles"
 	},
 	"version" : 
 	{
