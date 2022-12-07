@@ -1,0 +1,6 @@
+# ninja log v5
+22	98	6921057006093838	CMakeFiles/Scanner.dir/Scanner.cpp.obj	8a9cd9d06b0b1af7
+428	620	6921057011262140	Scanner.exe	e13e59930240f668
+33	233	6921057007434117	CMakeFiles/Scanner.dir/Func.cpp.obj	fba5e386f95802b
+11	386	6921057008964336	CMakeFiles/Scanner.dir/main.cpp.obj	abf4007ee27aec5b
+1	428	6921057009369271	CMakeFiles/Scanner.dir/Token.cpp.obj	ab78a8f8e4d1d85d
