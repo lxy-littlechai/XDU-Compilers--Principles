@@ -6,5 +6,7 @@ SET(ROOT_DIR ${CMAKE_SOURCE_DIR})
 
 add_executable(Scanner main.cpp Token.cpp Token.h Scanner.cpp Scanner.h Func.h)
 
-aux_source_directory(. SCANNER_SOURCE)
-add_library(Scanner ${SCANNER_SOURCE})
+include_directories(${PROJECT_SOURCE_DIR}/../headers)
+target_link_libraries(Scanner ${PROJECT_SOURCE_DIR}/../lib/libExceptionLog.so)
+
+

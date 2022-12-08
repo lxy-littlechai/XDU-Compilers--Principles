@@ -4,6 +4,6 @@ project(Parser)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(Parser main.cpp)
+include_directories(${PROJECT_SOURCE_DIR}/../headers)
 
-target_link_libraries(Parser Scanner)
-target_include_directories(Parser PUBLIC ../Scanner)
+target_link_libraries(Parser ${PROJECT_SOURCE_DIR}/../lib/libScanner.so)

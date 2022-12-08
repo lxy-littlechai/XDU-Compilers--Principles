@@ -1,8 +1,8 @@
-# Install script for directory: E:/University/Coding Space/XDU-Compilers--Principles
+# Install script for directory: /home/littlechai/University/XDU-Compilers--Principles
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Plotter_interpreter")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,6 +27,11 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -34,12 +39,119 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "D:/MinGW64/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("E:/University/Coding Space/XDU-Compilers--Principles/cmake-build-debug/Parser/cmake_install.cmake")
+  include("/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/Scanner/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/Parser/cmake_install.cmake")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}/home/littlechai/University/XDU-Compilers--Principles/lib/libScanner.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/littlechai/University/XDU-Compilers--Principles/lib/libScanner.so")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}/home/littlechai/University/XDU-Compilers--Principles/lib/libScanner.so"
+         RPATH "")
+  endif()
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "/home/littlechai/University/XDU-Compilers--Principles/lib/libScanner.so")
+  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  file(INSTALL DESTINATION "/home/littlechai/University/XDU-Compilers--Principles/lib" TYPE SHARED_LIBRARY FILES "/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/libScanner.so")
+  if(EXISTS "$ENV{DESTDIR}/home/littlechai/University/XDU-Compilers--Principles/lib/libScanner.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/littlechai/University/XDU-Compilers--Principles/lib/libScanner.so")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/littlechai/University/XDU-Compilers--Principles/lib/libScanner.so")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "/home/littlechai/University/XDU-Compilers--Principles/headers/Scanner.h")
+  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  file(INSTALL DESTINATION "/home/littlechai/University/XDU-Compilers--Principles/headers" TYPE FILE FILES "/home/littlechai/University/XDU-Compilers--Principles/Scanner/Scanner.h")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "/home/littlechai/University/XDU-Compilers--Principles/headers/Token.h")
+  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  file(INSTALL DESTINATION "/home/littlechai/University/XDU-Compilers--Principles/headers" TYPE FILE FILES "/home/littlechai/University/XDU-Compilers--Principles/Scanner/Token.h")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "/home/littlechai/University/XDU-Compilers--Principles/headers/Func.h")
+  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  file(INSTALL DESTINATION "/home/littlechai/University/XDU-Compilers--Principles/headers" TYPE FILE FILES "/home/littlechai/University/XDU-Compilers--Principles/Scanner/Func.h")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}/home/littlechai/University/XDU-Compilers--Principles/lib/libExceptionLog.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/littlechai/University/XDU-Compilers--Principles/lib/libExceptionLog.so")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}/home/littlechai/University/XDU-Compilers--Principles/lib/libExceptionLog.so"
+         RPATH "")
+  endif()
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "/home/littlechai/University/XDU-Compilers--Principles/lib/libExceptionLog.so")
+  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  file(INSTALL DESTINATION "/home/littlechai/University/XDU-Compilers--Principles/lib" TYPE SHARED_LIBRARY FILES "/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/libExceptionLog.so")
+  if(EXISTS "$ENV{DESTDIR}/home/littlechai/University/XDU-Compilers--Principles/lib/libExceptionLog.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/littlechai/University/XDU-Compilers--Principles/lib/libExceptionLog.so")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/littlechai/University/XDU-Compilers--Principles/lib/libExceptionLog.so")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "/home/littlechai/University/XDU-Compilers--Principles/headers/Scanner.h")
+  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  file(INSTALL DESTINATION "/home/littlechai/University/XDU-Compilers--Principles/headers" TYPE FILE FILES "/home/littlechai/University/XDU-Compilers--Principles/Scanner/Scanner.h")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -50,5 +162,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "E:/University/Coding Space/XDU-Compilers--Principles/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

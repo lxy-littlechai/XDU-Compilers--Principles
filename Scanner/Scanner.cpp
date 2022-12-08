@@ -5,19 +5,19 @@
 #include <string>
 #include <iomanip>
 #include "Scanner.h"
-#include "../ExceptionLog/ExceptionLog.h"
+#include "ExceptionLog.h"
 
 
 void Scanner::init_scanner(std::string fileName) {
     try {
         file.open(fileName);
-//        if(!file.is_open()) {
-//            throw new ExceptionLog("文件打开失败");
-//        }
+        if(!file.is_open()) {
+            throw ExceptionLog("failed to open the file");
+        }
 
 
     } catch (ExceptionLog &e) {
- //       e.log();
+        e.log();
     }
 
 }
@@ -25,9 +25,9 @@ void Scanner::init_scanner(std::string fileName) {
 void Scanner::start_scanner() {
     Token token;
     std::cout.width(8);
-    std::cout << std::setw(20) << "记号类别"
-              << std::setw(20) << "字符串"
-              << std::setw(20) << "常数值"
+    std::cout << std::setw(20) << "Type"
+              << std::setw(20) << "Token"
+              << std::setw(20) << "Value"
               << std::endl;
     while(true) {
         token = getToken();

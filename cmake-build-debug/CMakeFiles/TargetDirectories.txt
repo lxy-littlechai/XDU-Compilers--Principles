@@ -1,7 +1,22 @@
-E:/University/Coding Space/XDU-Compilers--Principles/cmake-build-debug/CMakeFiles/edit_cache.dir
-E:/University/Coding Space/XDU-Compilers--Principles/cmake-build-debug/CMakeFiles/Plotter_interpreter.dir
-E:/University/Coding Space/XDU-Compilers--Principles/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-E:/University/Coding Space/XDU-Compilers--Principles/cmake-build-debug/Parser/CMakeFiles/rebuild_cache.dir
-E:/University/Coding Space/XDU-Compilers--Principles/cmake-build-debug/Parser/CMakeFiles/SCANNER.dir
-E:/University/Coding Space/XDU-Compilers--Principles/cmake-build-debug/Parser/CMakeFiles/Scanner.dir
-E:/University/Coding Space/XDU-Compilers--Principles/cmake-build-debug/Parser/CMakeFiles/edit_cache.dir
+/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/CMakeFiles/Plotter_interpreter.dir
+/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/CMakeFiles/Scanner.dir
+/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/CMakeFiles/ExceptionLog.dir
+/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/CMakeFiles/list_install_components.dir
+/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/CMakeFiles/install.dir
+/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/CMakeFiles/install/local.dir
+/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/CMakeFiles/install/strip.dir
+/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/Scanner/CMakeFiles/edit_cache.dir
+/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/Scanner/CMakeFiles/rebuild_cache.dir
+/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/Scanner/CMakeFiles/list_install_components.dir
+/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/Scanner/CMakeFiles/install.dir
+/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/Scanner/CMakeFiles/install/local.dir
+/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/Scanner/CMakeFiles/install/strip.dir
+/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/Parser/CMakeFiles/Parser.dir
+/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/Parser/CMakeFiles/edit_cache.dir
+/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/Parser/CMakeFiles/rebuild_cache.dir
+/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/Parser/CMakeFiles/list_install_components.dir
+/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/Parser/CMakeFiles/install.dir
+/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/Parser/CMakeFiles/install/local.dir
+/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/Parser/CMakeFiles/install/strip.dir

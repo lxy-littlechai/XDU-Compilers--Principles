@@ -1,4 +1,4 @@
-"D:\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=D:/CLion 2021.3.4/bin/ninja/win/ninja.exe" -G Ninja "E:\University\Coding Space\XDU-Compilers--Principles"
+/snap/clion/209/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/209/bin/ninja/linux/ninja -G Ninja -S /home/littlechai/University/XDU-Compilers--Principles -B /home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug
 -- Configuring done
 -- Generating done
--- Build files have been written to: E:/University/Coding Space/XDU-Compilers--Principles/cmake-build-debug
+-- Build files have been written to: /home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug

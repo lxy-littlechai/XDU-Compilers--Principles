@@ -1,0 +1,6 @@
+/home/littlechai/University/XDU-Compilers--Principles/lib/libScanner.so
+/home/littlechai/University/XDU-Compilers--Principles/headers/Scanner.h
+/home/littlechai/University/XDU-Compilers--Principles/headers/Token.h
+/home/littlechai/University/XDU-Compilers--Principles/headers/Func.h
+/home/littlechai/University/XDU-Compilers--Principles/lib/libExceptionLog.so
+/home/littlechai/University/XDU-Compilers--Principles/headers/ExceptionLog.h
