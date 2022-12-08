@@ -73,49 +73,6 @@ build Plotter_interpreter: CXX_EXECUTABLE_LINKER__Plotter_interpreter_Debug CMak
   TARGET_PDB = Plotter_interpreter.dbg
 
 # =============================================================================
-# Object build statements for SHARED_LIBRARY target Scanner
-
-
-#############################################
-# Order-only phony target for Scanner
-
-build cmake_object_order_depends_target_Scanner: phony || CMakeFiles/Scanner.dir
-
-build CMakeFiles/Scanner.dir/Scanner/Scanner.cpp.o: CXX_COMPILER__Scanner_Debug /home/littlechai/University/XDU-Compilers--Principles/Scanner/Scanner.cpp || cmake_object_order_depends_target_Scanner
-  DEFINES = -DScanner_EXPORTS
-  DEP_FILE = CMakeFiles/Scanner.dir/Scanner/Scanner.cpp.o.d
-  FLAGS = -g -fPIC -std=gnu++20
-  INCLUDES = -I/home/littlechai/University/XDU-Compilers--Principles/headers
-  OBJECT_DIR = CMakeFiles/Scanner.dir
-  OBJECT_FILE_DIR = CMakeFiles/Scanner.dir/Scanner
-
-build CMakeFiles/Scanner.dir/Scanner/Token.cpp.o: CXX_COMPILER__Scanner_Debug /home/littlechai/University/XDU-Compilers--Principles/Scanner/Token.cpp || cmake_object_order_depends_target_Scanner
-  DEFINES = -DScanner_EXPORTS
-  DEP_FILE = CMakeFiles/Scanner.dir/Scanner/Token.cpp.o.d
-  FLAGS = -g -fPIC -std=gnu++20
-  INCLUDES = -I/home/littlechai/University/XDU-Compilers--Principles/headers
-  OBJECT_DIR = CMakeFiles/Scanner.dir
-  OBJECT_FILE_DIR = CMakeFiles/Scanner.dir/Scanner
-
-
-# =============================================================================
-# Link build statements for SHARED_LIBRARY target Scanner
-
-
-#############################################
-# Link the shared library libScanner.so
-
-build libScanner.so: CXX_SHARED_LIBRARY_LINKER__Scanner_Debug CMakeFiles/Scanner.dir/Scanner/Scanner.cpp.o CMakeFiles/Scanner.dir/Scanner/Token.cpp.o
-  LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = CMakeFiles/Scanner.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  SONAME = libScanner.so
-  SONAME_FLAG = -Wl,-soname,
-  TARGET_FILE = libScanner.so
-  TARGET_PDB = Scanner.so.dbg
-
-# =============================================================================
 # Object build statements for SHARED_LIBRARY target ExceptionLog
 
 
@@ -221,6 +178,53 @@ build install/strip: phony CMakeFiles/install/strip.util
 # /home/littlechai/University/XDU-Compilers--Principles/CMakeLists.txt
 # =============================================================================
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Scanner
+
+
+#############################################
+# Order-only phony target for Scanner
+
+build cmake_object_order_depends_target_Scanner: phony || Scanner/CMakeFiles/Scanner.dir
+
+build Scanner/CMakeFiles/Scanner.dir/main.cpp.o: CXX_COMPILER__Scanner_Debug /home/littlechai/University/XDU-Compilers--Principles/Scanner/main.cpp || cmake_object_order_depends_target_Scanner
+  DEP_FILE = Scanner/CMakeFiles/Scanner.dir/main.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  INCLUDES = -I/home/littlechai/University/XDU-Compilers--Principles/Scanner/../headers
+  OBJECT_DIR = Scanner/CMakeFiles/Scanner.dir
+  OBJECT_FILE_DIR = Scanner/CMakeFiles/Scanner.dir
+
+build Scanner/CMakeFiles/Scanner.dir/Token.cpp.o: CXX_COMPILER__Scanner_Debug /home/littlechai/University/XDU-Compilers--Principles/Scanner/Token.cpp || cmake_object_order_depends_target_Scanner
+  DEP_FILE = Scanner/CMakeFiles/Scanner.dir/Token.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  INCLUDES = -I/home/littlechai/University/XDU-Compilers--Principles/Scanner/../headers
+  OBJECT_DIR = Scanner/CMakeFiles/Scanner.dir
+  OBJECT_FILE_DIR = Scanner/CMakeFiles/Scanner.dir
+
+build Scanner/CMakeFiles/Scanner.dir/Scanner.cpp.o: CXX_COMPILER__Scanner_Debug /home/littlechai/University/XDU-Compilers--Principles/Scanner/Scanner.cpp || cmake_object_order_depends_target_Scanner
+  DEP_FILE = Scanner/CMakeFiles/Scanner.dir/Scanner.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  INCLUDES = -I/home/littlechai/University/XDU-Compilers--Principles/Scanner/../headers
+  OBJECT_DIR = Scanner/CMakeFiles/Scanner.dir
+  OBJECT_FILE_DIR = Scanner/CMakeFiles/Scanner.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Scanner
+
+
+#############################################
+# Link the executable Scanner/Scanner
+
+build Scanner/Scanner: CXX_EXECUTABLE_LINKER__Scanner_Debug Scanner/CMakeFiles/Scanner.dir/main.cpp.o Scanner/CMakeFiles/Scanner.dir/Token.cpp.o Scanner/CMakeFiles/Scanner.dir/Scanner.cpp.o | ../Scanner/../lib/libExceptionLog.so
+  FLAGS = -g
+  LINK_LIBRARIES = -Wl,-rpath,/home/littlechai/University/XDU-Compilers--Principles/Scanner/../lib:  ../Scanner/../lib/libExceptionLog.so
+  OBJECT_DIR = Scanner/CMakeFiles/Scanner.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Scanner/Scanner
+  TARGET_PDB = Scanner.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -308,6 +312,20 @@ build Parser/CMakeFiles/Parser.dir/main.cpp.o: CXX_COMPILER__Parser_Debug /home/
   OBJECT_DIR = Parser/CMakeFiles/Parser.dir
   OBJECT_FILE_DIR = Parser/CMakeFiles/Parser.dir
 
+build Parser/CMakeFiles/Parser.dir/TreeNode.cpp.o: CXX_COMPILER__Parser_Debug /home/littlechai/University/XDU-Compilers--Principles/Parser/TreeNode.cpp || cmake_object_order_depends_target_Parser
+  DEP_FILE = Parser/CMakeFiles/Parser.dir/TreeNode.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  INCLUDES = -I/home/littlechai/University/XDU-Compilers--Principles/Parser/../headers
+  OBJECT_DIR = Parser/CMakeFiles/Parser.dir
+  OBJECT_FILE_DIR = Parser/CMakeFiles/Parser.dir
+
+build Parser/CMakeFiles/Parser.dir/Parser.cpp.o: CXX_COMPILER__Parser_Debug /home/littlechai/University/XDU-Compilers--Principles/Parser/Parser.cpp || cmake_object_order_depends_target_Parser
+  DEP_FILE = Parser/CMakeFiles/Parser.dir/Parser.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  INCLUDES = -I/home/littlechai/University/XDU-Compilers--Principles/Parser/../headers
+  OBJECT_DIR = Parser/CMakeFiles/Parser.dir
+  OBJECT_FILE_DIR = Parser/CMakeFiles/Parser.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Parser
@@ -316,9 +334,9 @@ build Parser/CMakeFiles/Parser.dir/main.cpp.o: CXX_COMPILER__Parser_Debug /home/
 #############################################
 # Link the executable Parser/Parser
 
-build Parser/Parser: CXX_EXECUTABLE_LINKER__Parser_Debug Parser/CMakeFiles/Parser.dir/main.cpp.o | ../Parser/../lib/libScanner.so
+build Parser/Parser: CXX_EXECUTABLE_LINKER__Parser_Debug Parser/CMakeFiles/Parser.dir/main.cpp.o Parser/CMakeFiles/Parser.dir/TreeNode.cpp.o Parser/CMakeFiles/Parser.dir/Parser.cpp.o | ../Parser/../lib/libScanner.so ../Parser/../lib/libExceptionLog.so
   FLAGS = -g
-  LINK_LIBRARIES = -Wl,-rpath,/home/littlechai/University/XDU-Compilers--Principles/Parser/../lib  ../Parser/../lib/libScanner.so
+  LINK_LIBRARIES = -Wl,-rpath,/home/littlechai/University/XDU-Compilers--Principles/Parser/../lib  ../Parser/../lib/libScanner.so  ../Parser/../lib/libExceptionLog.so
   OBJECT_DIR = Parser/CMakeFiles/Parser.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -398,7 +416,7 @@ build ExceptionLog: phony libExceptionLog.so
 
 build Parser: phony Parser/Parser
 
-build Scanner: phony libScanner.so
+build Scanner: phony Scanner/Scanner
 
 # =============================================================================
 # Folder targets.
@@ -408,7 +426,7 @@ build Scanner: phony libScanner.so
 #############################################
 # Folder: /home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug
 
-build all: phony Plotter_interpreter libScanner.so libExceptionLog.so Scanner/all Parser/all
+build all: phony Plotter_interpreter libExceptionLog.so Scanner/all Parser/all
 
 # =============================================================================
 
@@ -422,7 +440,7 @@ build Parser/all: phony Parser/Parser
 #############################################
 # Folder: /home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/Scanner
 
-build Scanner/all: phony
+build Scanner/all: phony Scanner/Scanner
 
 # =============================================================================
 # Built-in targets

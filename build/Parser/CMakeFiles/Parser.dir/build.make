@@ -83,18 +83,51 @@ Parser/CMakeFiles/Parser.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Parser.dir/main.cpp.s"
 	cd /home/littlechai/University/XDU-Compilers--Principles/build/Parser && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/littlechai/University/XDU-Compilers--Principles/Parser/main.cpp -o CMakeFiles/Parser.dir/main.cpp.s
 
+Parser/CMakeFiles/Parser.dir/TreeNode.cpp.o: Parser/CMakeFiles/Parser.dir/flags.make
+Parser/CMakeFiles/Parser.dir/TreeNode.cpp.o: ../Parser/TreeNode.cpp
+Parser/CMakeFiles/Parser.dir/TreeNode.cpp.o: Parser/CMakeFiles/Parser.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/littlechai/University/XDU-Compilers--Principles/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Parser/CMakeFiles/Parser.dir/TreeNode.cpp.o"
+	cd /home/littlechai/University/XDU-Compilers--Principles/build/Parser && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Parser/CMakeFiles/Parser.dir/TreeNode.cpp.o -MF CMakeFiles/Parser.dir/TreeNode.cpp.o.d -o CMakeFiles/Parser.dir/TreeNode.cpp.o -c /home/littlechai/University/XDU-Compilers--Principles/Parser/TreeNode.cpp
+
+Parser/CMakeFiles/Parser.dir/TreeNode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Parser.dir/TreeNode.cpp.i"
+	cd /home/littlechai/University/XDU-Compilers--Principles/build/Parser && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/littlechai/University/XDU-Compilers--Principles/Parser/TreeNode.cpp > CMakeFiles/Parser.dir/TreeNode.cpp.i
+
+Parser/CMakeFiles/Parser.dir/TreeNode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Parser.dir/TreeNode.cpp.s"
+	cd /home/littlechai/University/XDU-Compilers--Principles/build/Parser && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/littlechai/University/XDU-Compilers--Principles/Parser/TreeNode.cpp -o CMakeFiles/Parser.dir/TreeNode.cpp.s
+
+Parser/CMakeFiles/Parser.dir/Parser.cpp.o: Parser/CMakeFiles/Parser.dir/flags.make
+Parser/CMakeFiles/Parser.dir/Parser.cpp.o: ../Parser/Parser.cpp
+Parser/CMakeFiles/Parser.dir/Parser.cpp.o: Parser/CMakeFiles/Parser.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/littlechai/University/XDU-Compilers--Principles/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Parser/CMakeFiles/Parser.dir/Parser.cpp.o"
+	cd /home/littlechai/University/XDU-Compilers--Principles/build/Parser && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Parser/CMakeFiles/Parser.dir/Parser.cpp.o -MF CMakeFiles/Parser.dir/Parser.cpp.o.d -o CMakeFiles/Parser.dir/Parser.cpp.o -c /home/littlechai/University/XDU-Compilers--Principles/Parser/Parser.cpp
+
+Parser/CMakeFiles/Parser.dir/Parser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Parser.dir/Parser.cpp.i"
+	cd /home/littlechai/University/XDU-Compilers--Principles/build/Parser && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/littlechai/University/XDU-Compilers--Principles/Parser/Parser.cpp > CMakeFiles/Parser.dir/Parser.cpp.i
+
+Parser/CMakeFiles/Parser.dir/Parser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Parser.dir/Parser.cpp.s"
+	cd /home/littlechai/University/XDU-Compilers--Principles/build/Parser && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/littlechai/University/XDU-Compilers--Principles/Parser/Parser.cpp -o CMakeFiles/Parser.dir/Parser.cpp.s
+
 # Object files for target Parser
 Parser_OBJECTS = \
-"CMakeFiles/Parser.dir/main.cpp.o"
+"CMakeFiles/Parser.dir/main.cpp.o" \
+"CMakeFiles/Parser.dir/TreeNode.cpp.o" \
+"CMakeFiles/Parser.dir/Parser.cpp.o"
 
 # External object files for target Parser
 Parser_EXTERNAL_OBJECTS =
 
 Parser/Parser: Parser/CMakeFiles/Parser.dir/main.cpp.o
+Parser/Parser: Parser/CMakeFiles/Parser.dir/TreeNode.cpp.o
+Parser/Parser: Parser/CMakeFiles/Parser.dir/Parser.cpp.o
 Parser/Parser: Parser/CMakeFiles/Parser.dir/build.make
 Parser/Parser: ../Parser/../lib/libScanner.so
+Parser/Parser: ../Parser/../lib/libExceptionLog.so
 Parser/Parser: Parser/CMakeFiles/Parser.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/littlechai/University/XDU-Compilers--Principles/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Parser"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/littlechai/University/XDU-Compilers--Principles/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Parser"
 	cd /home/littlechai/University/XDU-Compilers--Principles/build/Parser && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Parser.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

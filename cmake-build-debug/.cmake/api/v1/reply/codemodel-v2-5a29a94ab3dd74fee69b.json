@@ -12,7 +12,7 @@
 						2
 					],
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-3257a0905d227154be3c.json",
+					"jsonFile" : "directory-.-Debug-17c21490f994e689bc40.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.21"
@@ -22,8 +22,7 @@
 					"targetIndexes" : 
 					[
 						0,
-						2,
-						3
+						2
 					]
 				},
 				{
@@ -35,7 +34,11 @@
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 1,
-					"source" : "Scanner"
+					"source" : "Scanner",
+					"targetIndexes" : 
+					[
+						3
+					]
 				},
 				{
 					"build" : "Parser",
@@ -70,8 +73,7 @@
 					"targetIndexes" : 
 					[
 						0,
-						2,
-						3
+						2
 					]
 				},
 				{
@@ -80,7 +82,11 @@
 						1
 					],
 					"name" : "Scanner",
-					"parentIndex" : 0
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3
+					]
 				},
 				{
 					"directoryIndexes" : 
@@ -107,7 +113,7 @@
 				{
 					"directoryIndex" : 2,
 					"id" : "Parser::@74bff9814a543eacbe93",
-					"jsonFile" : "target-Parser-Debug-6f5223f5aa9af5a17485.json",
+					"jsonFile" : "target-Parser-Debug-ff8bf3ad9aa1a87208a4.json",
 					"name" : "Parser",
 					"projectIndex" : 2
 				},
@@ -119,11 +125,11 @@
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 0,
-					"id" : "Scanner::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Scanner-Debug-f7f78611b7067be3a03a.json",
+					"directoryIndex" : 1,
+					"id" : "Scanner::@32a5743141a4970811cd",
+					"jsonFile" : "target-Scanner-Debug-fb220253df74ea9e69ff.json",
 					"name" : "Scanner",
-					"projectIndex" : 0
+					"projectIndex" : 1
 				}
 			]
 		}

@@ -175,6 +175,54 @@ Parser/fast:
 	cd /home/littlechai/University/XDU-Compilers--Principles/build && $(MAKE) $(MAKESILENT) -f Parser/CMakeFiles/Parser.dir/build.make Parser/CMakeFiles/Parser.dir/build
 .PHONY : Parser/fast
 
+Parser.o: Parser.cpp.o
+.PHONY : Parser.o
+
+# target to build an object file
+Parser.cpp.o:
+	cd /home/littlechai/University/XDU-Compilers--Principles/build && $(MAKE) $(MAKESILENT) -f Parser/CMakeFiles/Parser.dir/build.make Parser/CMakeFiles/Parser.dir/Parser.cpp.o
+.PHONY : Parser.cpp.o
+
+Parser.i: Parser.cpp.i
+.PHONY : Parser.i
+
+# target to preprocess a source file
+Parser.cpp.i:
+	cd /home/littlechai/University/XDU-Compilers--Principles/build && $(MAKE) $(MAKESILENT) -f Parser/CMakeFiles/Parser.dir/build.make Parser/CMakeFiles/Parser.dir/Parser.cpp.i
+.PHONY : Parser.cpp.i
+
+Parser.s: Parser.cpp.s
+.PHONY : Parser.s
+
+# target to generate assembly for a file
+Parser.cpp.s:
+	cd /home/littlechai/University/XDU-Compilers--Principles/build && $(MAKE) $(MAKESILENT) -f Parser/CMakeFiles/Parser.dir/build.make Parser/CMakeFiles/Parser.dir/Parser.cpp.s
+.PHONY : Parser.cpp.s
+
+TreeNode.o: TreeNode.cpp.o
+.PHONY : TreeNode.o
+
+# target to build an object file
+TreeNode.cpp.o:
+	cd /home/littlechai/University/XDU-Compilers--Principles/build && $(MAKE) $(MAKESILENT) -f Parser/CMakeFiles/Parser.dir/build.make Parser/CMakeFiles/Parser.dir/TreeNode.cpp.o
+.PHONY : TreeNode.cpp.o
+
+TreeNode.i: TreeNode.cpp.i
+.PHONY : TreeNode.i
+
+# target to preprocess a source file
+TreeNode.cpp.i:
+	cd /home/littlechai/University/XDU-Compilers--Principles/build && $(MAKE) $(MAKESILENT) -f Parser/CMakeFiles/Parser.dir/build.make Parser/CMakeFiles/Parser.dir/TreeNode.cpp.i
+.PHONY : TreeNode.cpp.i
+
+TreeNode.s: TreeNode.cpp.s
+.PHONY : TreeNode.s
+
+# target to generate assembly for a file
+TreeNode.cpp.s:
+	cd /home/littlechai/University/XDU-Compilers--Principles/build && $(MAKE) $(MAKESILENT) -f Parser/CMakeFiles/Parser.dir/build.make Parser/CMakeFiles/Parser.dir/TreeNode.cpp.s
+.PHONY : TreeNode.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -212,6 +260,12 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... Parser"
+	@echo "... Parser.o"
+	@echo "... Parser.i"
+	@echo "... Parser.s"
+	@echo "... TreeNode.o"
+	@echo "... TreeNode.i"
+	@echo "... TreeNode.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

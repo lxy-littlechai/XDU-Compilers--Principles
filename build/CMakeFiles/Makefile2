@@ -64,7 +64,6 @@ CMAKE_BINARY_DIR = /home/littlechai/University/XDU-Compilers--Principles/build
 
 # The main recursive "all" target.
 all: CMakeFiles/Plotter_interpreter.dir/all
-all: CMakeFiles/Scanner.dir/all
 all: CMakeFiles/ExceptionLog.dir/all
 all: Scanner/all
 all: Parser/all
@@ -77,7 +76,6 @@ preinstall: Parser/preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/Plotter_interpreter.dir/clean
-clean: CMakeFiles/Scanner.dir/clean
 clean: CMakeFiles/ExceptionLog.dir/clean
 clean: Scanner/clean
 clean: Parser/clean
@@ -102,7 +100,7 @@ Parser/clean: Parser/CMakeFiles/Parser.dir/clean
 # Directory level rules for directory Scanner
 
 # Recursive "all" directory target.
-Scanner/all:
+Scanner/all: Scanner/CMakeFiles/Scanner.dir/all
 .PHONY : Scanner/all
 
 # Recursive "preinstall" directory target.
@@ -110,7 +108,7 @@ Scanner/preinstall:
 .PHONY : Scanner/preinstall
 
 # Recursive "clean" directory target.
-Scanner/clean:
+Scanner/clean: Scanner/CMakeFiles/Scanner.dir/clean
 .PHONY : Scanner/clean
 
 #=============================================================================
@@ -120,7 +118,7 @@ Scanner/clean:
 CMakeFiles/Plotter_interpreter.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Plotter_interpreter.dir/build.make CMakeFiles/Plotter_interpreter.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Plotter_interpreter.dir/build.make CMakeFiles/Plotter_interpreter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/littlechai/University/XDU-Compilers--Principles/build/CMakeFiles --progress-num=5,6 "Built target Plotter_interpreter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/littlechai/University/XDU-Compilers--Principles/build/CMakeFiles --progress-num=7,8 "Built target Plotter_interpreter"
 .PHONY : CMakeFiles/Plotter_interpreter.dir/all
 
 # Build rule for subdir invocation for target.
@@ -138,32 +136,6 @@ Plotter_interpreter: CMakeFiles/Plotter_interpreter.dir/rule
 CMakeFiles/Plotter_interpreter.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Plotter_interpreter.dir/build.make CMakeFiles/Plotter_interpreter.dir/clean
 .PHONY : CMakeFiles/Plotter_interpreter.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/Scanner.dir
-
-# All Build rule for target.
-CMakeFiles/Scanner.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scanner.dir/build.make CMakeFiles/Scanner.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scanner.dir/build.make CMakeFiles/Scanner.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/littlechai/University/XDU-Compilers--Principles/build/CMakeFiles --progress-num=7,8,9 "Built target Scanner"
-.PHONY : CMakeFiles/Scanner.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/Scanner.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/littlechai/University/XDU-Compilers--Principles/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Scanner.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/littlechai/University/XDU-Compilers--Principles/build/CMakeFiles 0
-.PHONY : CMakeFiles/Scanner.dir/rule
-
-# Convenience name for target.
-Scanner: CMakeFiles/Scanner.dir/rule
-.PHONY : Scanner
-
-# clean rule for target.
-CMakeFiles/Scanner.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scanner.dir/build.make CMakeFiles/Scanner.dir/clean
-.PHONY : CMakeFiles/Scanner.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/ExceptionLog.dir
@@ -192,18 +164,44 @@ CMakeFiles/ExceptionLog.dir/clean:
 .PHONY : CMakeFiles/ExceptionLog.dir/clean
 
 #=============================================================================
+# Target rules for target Scanner/CMakeFiles/Scanner.dir
+
+# All Build rule for target.
+Scanner/CMakeFiles/Scanner.dir/all:
+	$(MAKE) $(MAKESILENT) -f Scanner/CMakeFiles/Scanner.dir/build.make Scanner/CMakeFiles/Scanner.dir/depend
+	$(MAKE) $(MAKESILENT) -f Scanner/CMakeFiles/Scanner.dir/build.make Scanner/CMakeFiles/Scanner.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/littlechai/University/XDU-Compilers--Principles/build/CMakeFiles --progress-num=9,10,11,12 "Built target Scanner"
+.PHONY : Scanner/CMakeFiles/Scanner.dir/all
+
+# Build rule for subdir invocation for target.
+Scanner/CMakeFiles/Scanner.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/littlechai/University/XDU-Compilers--Principles/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Scanner/CMakeFiles/Scanner.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/littlechai/University/XDU-Compilers--Principles/build/CMakeFiles 0
+.PHONY : Scanner/CMakeFiles/Scanner.dir/rule
+
+# Convenience name for target.
+Scanner: Scanner/CMakeFiles/Scanner.dir/rule
+.PHONY : Scanner
+
+# clean rule for target.
+Scanner/CMakeFiles/Scanner.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Scanner/CMakeFiles/Scanner.dir/build.make Scanner/CMakeFiles/Scanner.dir/clean
+.PHONY : Scanner/CMakeFiles/Scanner.dir/clean
+
+#=============================================================================
 # Target rules for target Parser/CMakeFiles/Parser.dir
 
 # All Build rule for target.
 Parser/CMakeFiles/Parser.dir/all:
 	$(MAKE) $(MAKESILENT) -f Parser/CMakeFiles/Parser.dir/build.make Parser/CMakeFiles/Parser.dir/depend
 	$(MAKE) $(MAKESILENT) -f Parser/CMakeFiles/Parser.dir/build.make Parser/CMakeFiles/Parser.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/littlechai/University/XDU-Compilers--Principles/build/CMakeFiles --progress-num=3,4 "Built target Parser"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/littlechai/University/XDU-Compilers--Principles/build/CMakeFiles --progress-num=3,4,5,6 "Built target Parser"
 .PHONY : Parser/CMakeFiles/Parser.dir/all
 
 # Build rule for subdir invocation for target.
 Parser/CMakeFiles/Parser.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/littlechai/University/XDU-Compilers--Principles/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/littlechai/University/XDU-Compilers--Principles/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Parser/CMakeFiles/Parser.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/littlechai/University/XDU-Compilers--Principles/build/CMakeFiles 0
 .PHONY : Parser/CMakeFiles/Parser.dir/rule

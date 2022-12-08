@@ -1,4 +1,4 @@
-/home/littlechai/University/XDU-Compilers--Principles/lib/libScanner.so
+/usr/local/bin/Scanner
 /home/littlechai/University/XDU-Compilers--Principles/headers/Scanner.h
 /home/littlechai/University/XDU-Compilers--Principles/headers/Token.h
 /home/littlechai/University/XDU-Compilers--Principles/headers/Func.h

@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Parser.dir/Parser.cpp.o"
+  "CMakeFiles/Parser.dir/Parser.cpp.o.d"
+  "CMakeFiles/Parser.dir/TreeNode.cpp.o"
+  "CMakeFiles/Parser.dir/TreeNode.cpp.o.d"
   "CMakeFiles/Parser.dir/main.cpp.o"
   "CMakeFiles/Parser.dir/main.cpp.o.d"
   "Parser"

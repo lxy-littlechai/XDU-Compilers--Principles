@@ -57,12 +57,12 @@
 		{
 			"backtrace" : 1,
 			"component" : "Unspecified",
-			"destination" : "/home/littlechai/University/XDU-Compilers--Principles/lib",
+			"destination" : "bin",
 			"paths" : 
 			[
-				"libScanner.so"
+				"Scanner/Scanner"
 			],
-			"targetId" : "Scanner::@6890427a1f51a3e7e1df",
+			"targetId" : "Scanner::@32a5743141a4970811cd",
 			"targetIndex" : 3,
 			"type" : "target"
 		},
@@ -114,7 +114,7 @@
 			"destination" : "/home/littlechai/University/XDU-Compilers--Principles/headers",
 			"paths" : 
 			[
-				"Scanner/Scanner.h"
+				"ExceptionLog/ExceptionLog.h"
 			],
 			"type" : "file"
 		}

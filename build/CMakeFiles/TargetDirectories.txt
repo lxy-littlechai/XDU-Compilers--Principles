@@ -1,5 +1,4 @@
 /home/littlechai/University/XDU-Compilers--Principles/build/CMakeFiles/Plotter_interpreter.dir
-/home/littlechai/University/XDU-Compilers--Principles/build/CMakeFiles/Scanner.dir
 /home/littlechai/University/XDU-Compilers--Principles/build/CMakeFiles/ExceptionLog.dir
 /home/littlechai/University/XDU-Compilers--Principles/build/CMakeFiles/edit_cache.dir
 /home/littlechai/University/XDU-Compilers--Principles/build/CMakeFiles/rebuild_cache.dir
@@ -7,6 +6,7 @@
 /home/littlechai/University/XDU-Compilers--Principles/build/CMakeFiles/install.dir
 /home/littlechai/University/XDU-Compilers--Principles/build/CMakeFiles/install/local.dir
 /home/littlechai/University/XDU-Compilers--Principles/build/CMakeFiles/install/strip.dir
+/home/littlechai/University/XDU-Compilers--Principles/build/Scanner/CMakeFiles/Scanner.dir
 /home/littlechai/University/XDU-Compilers--Principles/build/Scanner/CMakeFiles/edit_cache.dir
 /home/littlechai/University/XDU-Compilers--Principles/build/Scanner/CMakeFiles/rebuild_cache.dir
 /home/littlechai/University/XDU-Compilers--Principles/build/Scanner/CMakeFiles/list_install_components.dir

@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/littlechai/University/XDU-Compilers--Principles/Parser/Parser.cpp" "Parser/CMakeFiles/Parser.dir/Parser.cpp.o" "gcc" "Parser/CMakeFiles/Parser.dir/Parser.cpp.o.d"
+  "/home/littlechai/University/XDU-Compilers--Principles/Parser/TreeNode.cpp" "Parser/CMakeFiles/Parser.dir/TreeNode.cpp.o" "gcc" "Parser/CMakeFiles/Parser.dir/TreeNode.cpp.o.d"
   "/home/littlechai/University/XDU-Compilers--Principles/Parser/main.cpp" "Parser/CMakeFiles/Parser.dir/main.cpp.o" "gcc" "Parser/CMakeFiles/Parser.dir/main.cpp.o.d"
   )
 

@@ -161,6 +161,92 @@ depend:
 	cd /home/littlechai/University/XDU-Compilers--Principles/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+Scanner/CMakeFiles/Scanner.dir/rule:
+	cd /home/littlechai/University/XDU-Compilers--Principles/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Scanner/CMakeFiles/Scanner.dir/rule
+.PHONY : Scanner/CMakeFiles/Scanner.dir/rule
+
+# Convenience name for target.
+Scanner: Scanner/CMakeFiles/Scanner.dir/rule
+.PHONY : Scanner
+
+# fast build rule for target.
+Scanner/fast:
+	cd /home/littlechai/University/XDU-Compilers--Principles/build && $(MAKE) $(MAKESILENT) -f Scanner/CMakeFiles/Scanner.dir/build.make Scanner/CMakeFiles/Scanner.dir/build
+.PHONY : Scanner/fast
+
+Scanner.o: Scanner.cpp.o
+.PHONY : Scanner.o
+
+# target to build an object file
+Scanner.cpp.o:
+	cd /home/littlechai/University/XDU-Compilers--Principles/build && $(MAKE) $(MAKESILENT) -f Scanner/CMakeFiles/Scanner.dir/build.make Scanner/CMakeFiles/Scanner.dir/Scanner.cpp.o
+.PHONY : Scanner.cpp.o
+
+Scanner.i: Scanner.cpp.i
+.PHONY : Scanner.i
+
+# target to preprocess a source file
+Scanner.cpp.i:
+	cd /home/littlechai/University/XDU-Compilers--Principles/build && $(MAKE) $(MAKESILENT) -f Scanner/CMakeFiles/Scanner.dir/build.make Scanner/CMakeFiles/Scanner.dir/Scanner.cpp.i
+.PHONY : Scanner.cpp.i
+
+Scanner.s: Scanner.cpp.s
+.PHONY : Scanner.s
+
+# target to generate assembly for a file
+Scanner.cpp.s:
+	cd /home/littlechai/University/XDU-Compilers--Principles/build && $(MAKE) $(MAKESILENT) -f Scanner/CMakeFiles/Scanner.dir/build.make Scanner/CMakeFiles/Scanner.dir/Scanner.cpp.s
+.PHONY : Scanner.cpp.s
+
+Token.o: Token.cpp.o
+.PHONY : Token.o
+
+# target to build an object file
+Token.cpp.o:
+	cd /home/littlechai/University/XDU-Compilers--Principles/build && $(MAKE) $(MAKESILENT) -f Scanner/CMakeFiles/Scanner.dir/build.make Scanner/CMakeFiles/Scanner.dir/Token.cpp.o
+.PHONY : Token.cpp.o
+
+Token.i: Token.cpp.i
+.PHONY : Token.i
+
+# target to preprocess a source file
+Token.cpp.i:
+	cd /home/littlechai/University/XDU-Compilers--Principles/build && $(MAKE) $(MAKESILENT) -f Scanner/CMakeFiles/Scanner.dir/build.make Scanner/CMakeFiles/Scanner.dir/Token.cpp.i
+.PHONY : Token.cpp.i
+
+Token.s: Token.cpp.s
+.PHONY : Token.s
+
+# target to generate assembly for a file
+Token.cpp.s:
+	cd /home/littlechai/University/XDU-Compilers--Principles/build && $(MAKE) $(MAKESILENT) -f Scanner/CMakeFiles/Scanner.dir/build.make Scanner/CMakeFiles/Scanner.dir/Token.cpp.s
+.PHONY : Token.cpp.s
+
+main.o: main.cpp.o
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	cd /home/littlechai/University/XDU-Compilers--Principles/build && $(MAKE) $(MAKESILENT) -f Scanner/CMakeFiles/Scanner.dir/build.make Scanner/CMakeFiles/Scanner.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	cd /home/littlechai/University/XDU-Compilers--Principles/build && $(MAKE) $(MAKESILENT) -f Scanner/CMakeFiles/Scanner.dir/build.make Scanner/CMakeFiles/Scanner.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	cd /home/littlechai/University/XDU-Compilers--Principles/build && $(MAKE) $(MAKESILENT) -f Scanner/CMakeFiles/Scanner.dir/build.make Scanner/CMakeFiles/Scanner.dir/main.cpp.s
+.PHONY : main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -173,6 +259,16 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... Scanner"
+	@echo "... Scanner.o"
+	@echo "... Scanner.i"
+	@echo "... Scanner.s"
+	@echo "... Token.o"
+	@echo "... Token.i"
+	@echo "... Token.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

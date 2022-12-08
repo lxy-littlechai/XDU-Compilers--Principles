@@ -52,13 +52,14 @@ Token Scanner::getToken() {
 
 
     while ((ch = getChar())) {  //filter space, enter, tab
-
+        column ++;
         if(ch == EOF) {
             token.tokenType = TokenType::NO_TOKEN;
             return token;
         }
         else if(ch == '\n') {
             row ++;
+            column = 0;
         }
         else if(!std::isspace(ch)) {
             break;

@@ -175,19 +175,6 @@ Plotter_interpreter/fast:
 .PHONY : Plotter_interpreter/fast
 
 #=============================================================================
-# Target rules for targets named Scanner
-
-# Build rule for target.
-Scanner: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Scanner
-.PHONY : Scanner
-
-# fast build rule for target.
-Scanner/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scanner.dir/build.make CMakeFiles/Scanner.dir/build
-.PHONY : Scanner/fast
-
-#=============================================================================
 # Target rules for targets named ExceptionLog
 
 # Build rule for target.
@@ -199,6 +186,19 @@ ExceptionLog: cmake_check_build_system
 ExceptionLog/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExceptionLog.dir/build.make CMakeFiles/ExceptionLog.dir/build
 .PHONY : ExceptionLog/fast
+
+#=============================================================================
+# Target rules for targets named Scanner
+
+# Build rule for target.
+Scanner: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Scanner
+.PHONY : Scanner
+
+# fast build rule for target.
+Scanner/fast:
+	$(MAKE) $(MAKESILENT) -f Scanner/CMakeFiles/Scanner.dir/build.make Scanner/CMakeFiles/Scanner.dir/build
+.PHONY : Scanner/fast
 
 #=============================================================================
 # Target rules for targets named Parser
@@ -236,54 +236,6 @@ ExceptionLog/ExceptionLog.s: ExceptionLog/ExceptionLog.cpp.s
 ExceptionLog/ExceptionLog.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExceptionLog.dir/build.make CMakeFiles/ExceptionLog.dir/ExceptionLog/ExceptionLog.cpp.s
 .PHONY : ExceptionLog/ExceptionLog.cpp.s
-
-Scanner/Scanner.o: Scanner/Scanner.cpp.o
-.PHONY : Scanner/Scanner.o
-
-# target to build an object file
-Scanner/Scanner.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scanner.dir/build.make CMakeFiles/Scanner.dir/Scanner/Scanner.cpp.o
-.PHONY : Scanner/Scanner.cpp.o
-
-Scanner/Scanner.i: Scanner/Scanner.cpp.i
-.PHONY : Scanner/Scanner.i
-
-# target to preprocess a source file
-Scanner/Scanner.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scanner.dir/build.make CMakeFiles/Scanner.dir/Scanner/Scanner.cpp.i
-.PHONY : Scanner/Scanner.cpp.i
-
-Scanner/Scanner.s: Scanner/Scanner.cpp.s
-.PHONY : Scanner/Scanner.s
-
-# target to generate assembly for a file
-Scanner/Scanner.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scanner.dir/build.make CMakeFiles/Scanner.dir/Scanner/Scanner.cpp.s
-.PHONY : Scanner/Scanner.cpp.s
-
-Scanner/Token.o: Scanner/Token.cpp.o
-.PHONY : Scanner/Token.o
-
-# target to build an object file
-Scanner/Token.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scanner.dir/build.make CMakeFiles/Scanner.dir/Scanner/Token.cpp.o
-.PHONY : Scanner/Token.cpp.o
-
-Scanner/Token.i: Scanner/Token.cpp.i
-.PHONY : Scanner/Token.i
-
-# target to preprocess a source file
-Scanner/Token.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scanner.dir/build.make CMakeFiles/Scanner.dir/Scanner/Token.cpp.i
-.PHONY : Scanner/Token.cpp.i
-
-Scanner/Token.s: Scanner/Token.cpp.s
-.PHONY : Scanner/Token.s
-
-# target to generate assembly for a file
-Scanner/Token.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scanner.dir/build.make CMakeFiles/Scanner.dir/Scanner/Token.cpp.s
-.PHONY : Scanner/Token.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -328,12 +280,6 @@ help:
 	@echo "... ExceptionLog/ExceptionLog.o"
 	@echo "... ExceptionLog/ExceptionLog.i"
 	@echo "... ExceptionLog/ExceptionLog.s"
-	@echo "... Scanner/Scanner.o"
-	@echo "... Scanner/Scanner.i"
-	@echo "... Scanner/Scanner.s"
-	@echo "... Scanner/Token.o"
-	@echo "... Scanner/Token.i"
-	@echo "... Scanner/Token.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

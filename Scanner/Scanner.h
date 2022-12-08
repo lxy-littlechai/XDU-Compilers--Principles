@@ -19,8 +19,6 @@ public:
     void start_scanner();
     void close_scanner();
     char getChar();
-
-private:
     Token getToken();
 };
 

@@ -56,6 +56,20 @@ build CMakeFiles/Parser.dir/main.cpp.o: CXX_COMPILER__Parser_Debug /home/littlec
   OBJECT_DIR = CMakeFiles/Parser.dir
   OBJECT_FILE_DIR = CMakeFiles/Parser.dir
 
+build CMakeFiles/Parser.dir/TreeNode.cpp.o: CXX_COMPILER__Parser_Debug /home/littlechai/University/XDU-Compilers--Principles/Parser/TreeNode.cpp || cmake_object_order_depends_target_Parser
+  DEP_FILE = CMakeFiles/Parser.dir/TreeNode.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  INCLUDES = -I/home/littlechai/University/XDU-Compilers--Principles/Parser/../headers
+  OBJECT_DIR = CMakeFiles/Parser.dir
+  OBJECT_FILE_DIR = CMakeFiles/Parser.dir
+
+build CMakeFiles/Parser.dir/Parser.cpp.o: CXX_COMPILER__Parser_Debug /home/littlechai/University/XDU-Compilers--Principles/Parser/Parser.cpp || cmake_object_order_depends_target_Parser
+  DEP_FILE = CMakeFiles/Parser.dir/Parser.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  INCLUDES = -I/home/littlechai/University/XDU-Compilers--Principles/Parser/../headers
+  OBJECT_DIR = CMakeFiles/Parser.dir
+  OBJECT_FILE_DIR = CMakeFiles/Parser.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Parser
@@ -64,9 +78,10 @@ build CMakeFiles/Parser.dir/main.cpp.o: CXX_COMPILER__Parser_Debug /home/littlec
 #############################################
 # Link the executable Parser
 
-build Parser: CXX_EXECUTABLE_LINKER__Parser_Debug CMakeFiles/Parser.dir/main.cpp.o | ../../lib/libScanner.so
+build Parser: CXX_EXECUTABLE_LINKER__Parser_Debug CMakeFiles/Parser.dir/main.cpp.o CMakeFiles/Parser.dir/TreeNode.cpp.o CMakeFiles/Parser.dir/Parser.cpp.o | ../../lib/libException.so ../../lib/libScanner.so
   FLAGS = -g
-  LINK_LIBRARIES = -Wl,-rpath,/home/littlechai/University/XDU-Compilers--Principles/Parser/../lib  ../../lib/libScanner.so
+  LINK_LIBRARIES = -Wl,-rpath,/home/littlechai/University/XDU-Compilers--Principles/Parser/../lib  -lException  ../../lib/libScanner.so
+  LINK_PATH = -L/home/littlechai/University/XDU-Compilers--Principles/Parser/../lib
   OBJECT_DIR = CMakeFiles/Parser.dir
   POST_BUILD = :
   PRE_LINK = :

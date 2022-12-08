@@ -48,7 +48,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Plotter_interpreter.dir/DependInfo.cmake"
-  "CMakeFiles/Scanner.dir/DependInfo.cmake"
   "CMakeFiles/ExceptionLog.dir/DependInfo.cmake"
+  "Scanner/CMakeFiles/Scanner.dir/DependInfo.cmake"
   "Parser/CMakeFiles/Parser.dir/DependInfo.cmake"
   )
