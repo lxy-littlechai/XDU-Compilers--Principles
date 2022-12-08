@@ -8,7 +8,7 @@
 	"installers" : [],
 	"paths" : 
 	{
-		"build" : "Scanner",
+		"build" : "Parser",
 		"source" : "Scanner"
 	}
 }

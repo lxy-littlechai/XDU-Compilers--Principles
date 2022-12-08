@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("E:/University/Coding Space/XDU-Compilers--Principles/cmake-build-debug/Scanner/cmake_install.cmake")
+  include("E:/University/Coding Space/XDU-Compilers--Principles/cmake-build-debug/Parser/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

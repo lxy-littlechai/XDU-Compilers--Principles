@@ -4,24 +4,24 @@
 
 #include "Token.h"
 const static Token TokenTable[] = {
-        Token(CONST_ID, "PI", 3.1415926535),
-        Token(CONST_ID, "E", 2.71828),
-        Token(T, "T", 0.0),
-        Token(ORIGIN, "ORIGIN", 0.0),
-        Token(SCALE, "SCALE", 0.0),
-        Token(ROT, "ROT", 0.0),
-        Token(IS, "IS", 0.0),
-        Token(FOR, "FOR", 0.0),
-        Token(FROM, "FROM", 0.0),
-        Token(T, "T", 0.0),
-        Token(STEP, "STEP", 0.0),
-        Token(DRAW, "DRAW", 0.0),
-        Token(FUNC, "COS", 0.0),
-        Token(FUNC, "SIN", 0.0),
-        Token(FUNC, "LN", 0.0),
-        Token(FUNC, "EXP", 0.0),
-        Token(FUNC, "SQRT", 0.0),
-        Token(FUNC, "TAN", 0.0),
+        Token(CONST_ID, "PI", 3.1415926535, Func()),
+        Token(CONST_ID, "E", 2.71828, Func()),
+        Token(T, "T", 0.0, Func()),
+        Token(ORIGIN, "ORIGIN", 0.0, Func()),
+        Token(SCALE, "SCALE", 0.0, Func()),
+        Token(ROT, "ROT", 0.0, Func()),
+        Token(IS, "IS", 0.0, Func()),
+        Token(FOR, "FOR", 0.0, Func()),
+        Token(FROM, "FROM", 0.0, Func()),
+        Token(T, "T", 0.0, Func()),
+        Token(STEP, "STEP", 0.0, Func()),
+        Token(DRAW, "DRAW", 0.0, Func()),
+        Token(FUNC, "COS", 0.0, Cos()),
+        Token(FUNC, "SIN", 0.0, Sin()),
+        Token(FUNC, "LN", 0.0, Ln()),
+        Token(FUNC, "EXP", 0.0, Exp()),
+        Token(FUNC, "SQRT", 0.0, Sqrt()),
+        Token(FUNC, "TAN", 0.0, Tan()),
 
 };
 
@@ -30,6 +30,13 @@ Token::Token() {
     token = "";
     value = 0;
 
+}
+
+Token::Token(TokenType tokenType, std::string token, double value, Func func) {
+    this->tokenType = tokenType;
+    this->token = token;
+    this->value = value;
+    this->func = func;
 }
 
 Token Token::judgeToken(std::string str) {

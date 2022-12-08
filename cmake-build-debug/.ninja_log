@@ -1,13 +1,10 @@
 # ninja log v5
-49	1226	6921342970716053	Scanner/CMakeFiles/Scanner.dir/Scanner.cpp.obj	506809915e480fc6
-21	1009	6921342968535545	Scanner/CMakeFiles/Scanner.dir/main.cpp.obj	3d0dae537346adfe
-2	783	6921342682063759	CMakeFiles/Plotter_interpreter.dir/main.cpp.obj	9bb07d71ab3b8dad
+0	371	6921708748967526	CMakeFiles/Plotter_interpreter.dir/main.cpp.obj	9bb07d71ab3b8dad
+13	544	6921688356428521	Scanner/CMakeFiles/Scanner.dir/main.cpp.obj	3d0dae537346adfe
+3	551	6921693867128515	Scanner/CMakeFiles/Scanner.dir/Scanner.cpp.obj	506809915e480fc6
+552	756	6921693869138826	Scanner/Scanner.exe	327294e6bdb28052
 7	432	6921342962768192	Scanner/CMakeFiles/Scanner.dir/Func.cpp.obj	726bd7cef38efbee
-1226	1515	6921342973540620	Scanner/Scanner.exe	6ab0c950d6f44c3f
-34	931	6921342967765381	Scanner/CMakeFiles/Scanner.dir/Token.cpp.obj	247d80c9adb66389
-22	886	6921342683084064	CMakeFiles/Plotter_interpreter.dir/ExceptionLog/ExceptionLog.cpp.obj	40261d672b791c7f
-887	1187	6921342685994763	Plotter_interpreter.exe	2b8d2d7d6f338963
-34	753	6921361806450233	Scanner/CMakeFiles/Scanner.dir/main.cpp.obj	3d0dae537346adfe
-12	441	6921362295277787	Scanner/CMakeFiles/Scanner.dir/Token.cpp.obj	247d80c9adb66389
-5	569	6921362408352184	Scanner/CMakeFiles/Scanner.dir/Scanner.cpp.obj	506809915e480fc6
-570	795	6921362410532746	Scanner/Scanner.exe	327294e6bdb28052
+4	499	6921688355978422	Scanner/CMakeFiles/Scanner.dir/Token.cpp.obj	247d80c9adb66389
+8	420	6921695432853367	CMakeFiles/Plotter_interpreter.dir/ExceptionLog/ExceptionLog.cpp.obj	40261d672b791c7f
+381	549	6921708750688052	Plotter_interpreter.exe	7bc0b511734b092f
+1	195	6921711441464821	build.ninja	8a9f70343c0fd78

@@ -1239,7 +1239,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/University/Coding Space/XDU-Compilers--Principles/cmake-build-debug/Scanner"
+			"value" : "E:/University/Coding Space/XDU-Compilers--Principles/cmake-build-debug"
 		},
 		{
 			"name" : "Plotter_interpreter_IS_TOP_LEVEL",
@@ -1251,7 +1251,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "OFF"
+			"value" : "ON"
 		},
 		{
 			"name" : "Plotter_interpreter_SOURCE_DIR",
@@ -1263,7 +1263,79 @@
 				}
 			],
 			"type" : "STATIC",
+			"value" : "E:/University/Coding Space/XDU-Compilers--Principles"
+		},
+		{
+			"name" : "Scanner_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "E:/University/Coding Space/XDU-Compilers--Principles/cmake-build-debug/Parser"
+		},
+		{
+			"name" : "Scanner_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "OFF"
+		},
+		{
+			"name" : "Scanner_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
 			"value" : "E:/University/Coding Space/XDU-Compilers--Principles/Scanner"
+		},
+		{
+			"name" : "XDU-Compilers--Principles_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "E:/University/Coding Space/XDU-Compilers--Principles/cmake-build-debug"
+		},
+		{
+			"name" : "XDU-Compilers--Principles_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "XDU-Compilers--Principles_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "E:/University/Coding Space/XDU-Compilers--Principles"
 		}
 	],
 	"kind" : "cache",

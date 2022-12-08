@@ -5,6 +5,7 @@
 #ifndef SCANNER_TOKEN_H
 #define SCANNER_TOKEN_H
 #include <string>
+#include "Func.h"
 
 enum TokenType {
     /* reserve key */
@@ -25,13 +26,10 @@ public:
     TokenType tokenType;
     std::string token;     //input string
     double value;           //record constant_id
+    Func func;
 
     Token();
-    Token(TokenType tokenType, std::string token, double value) {
-        this->tokenType = tokenType;
-        this->token = token;
-        this->value = value;
-    }
+    Token(TokenType tokenType, std::string token, double value, Func func);
     static Token judgeToken(std::string str);
 
 };

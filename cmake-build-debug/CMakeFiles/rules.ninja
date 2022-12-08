@@ -41,6 +41,25 @@ rule CXX_EXECUTABLE_LINKER__Plotter_interpreter_Debug
 #############################################
 # Rule for compiling CXX files.
 
+rule CXX_COMPILER__SCANNER_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = D:\MinGW64\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX static library.
+
+rule CXX_STATIC_LIBRARY_LINKER__SCANNER_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\MinGW64\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\mingw64\bin\ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\MinGW64\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\mingw64\bin\ranlib.exe $TARGET_FILE && $POST_BUILD"
+  description = Linking CXX static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
 rule CXX_COMPILER__Scanner_Debug
   depfile = $DEP_FILE
   deps = gcc

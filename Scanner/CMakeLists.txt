@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 3.21)
-project(Plotter_interpreter)
+project(Scanner)
 
 set(CMAKE_CXX_STANDARD 20)
+SET(ROOT_DIR ${CMAKE_SOURCE_DIR})
 
-add_executable(Scanner main.cpp Token.cpp Token.h Scanner.cpp Scanner.h)
+add_executable(Scanner main.cpp Token.cpp Token.h Scanner.cpp Scanner.h Func.h)
+
+aux_source_directory(. SCANNER_SOURCE)
+add_library(Scanner ${SCANNER_SOURCE})

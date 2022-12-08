@@ -9,17 +9,17 @@
 
 
 void Scanner::init_scanner(std::string fileName) {
-//    try {
+    try {
         file.open(fileName);
-        if(!file.is_open()) {
-            //throw ExceptionLog("文件打开失败");
-        }
+//        if(!file.is_open()) {
+//            throw new ExceptionLog("文件打开失败");
+//        }
 
-/*
+
     } catch (ExceptionLog &e) {
-        //e.log();
+ //       e.log();
     }
-*/
+
 }
 
 void Scanner::start_scanner() {

@@ -23,18 +23,19 @@
 					]
 				},
 				{
-					"build" : "Scanner",
-					"jsonFile" : "directory-Scanner-Debug-0f901edfddf1b3db8f50.json",
+					"build" : "Parser",
+					"jsonFile" : "directory-Parser-Debug-f7a3dc34cd5cf3e27ce1.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.21"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 0,
+					"projectIndex" : 1,
 					"source" : "Scanner",
 					"targetIndexes" : 
 					[
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -42,16 +43,31 @@
 			"projects" : 
 			[
 				{
+					"childIndexes" : 
+					[
+						1
+					],
 					"directoryIndexes" : 
 					[
-						0,
-						1
+						0
 					],
 					"name" : "Plotter_interpreter",
 					"targetIndexes" : 
 					[
-						0,
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
 						1
+					],
+					"name" : "Scanner",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						2
 					]
 				}
 			],
@@ -60,16 +76,23 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Plotter_interpreter::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Plotter_interpreter-Debug-46d4c2c45dbce5102506.json",
+					"jsonFile" : "target-Plotter_interpreter-Debug-39977ccd87bf9df60c94.json",
 					"name" : "Plotter_interpreter",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
-					"id" : "Scanner::@32a5743141a4970811cd",
-					"jsonFile" : "target-Scanner-Debug-11cb9c6d456e65322094.json",
+					"id" : "SCANNER::@74bff9814a543eacbe93",
+					"jsonFile" : "target-SCANNER-Debug-475254b876ef0fb1795a.json",
+					"name" : "SCANNER",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Scanner::@74bff9814a543eacbe93",
+					"jsonFile" : "target-Scanner-Debug-dcd3389d9a383639bc14.json",
 					"name" : "Scanner",
-					"projectIndex" : 0
+					"projectIndex" : 1
 				}
 			]
 		}

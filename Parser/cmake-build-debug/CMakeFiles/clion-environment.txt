@@ -1,0 +1,4 @@
+ToolSet: w64 6.0 (local)@D:\MinGW64\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\mingw64
+Options: 
+
+Options:-DCMAKE_MAKE_PROGRAM=D:/CLion 2021.3.4/bin/ninja/win/ninja.exe
