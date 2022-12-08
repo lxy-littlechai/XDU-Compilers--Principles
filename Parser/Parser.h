@@ -9,9 +9,7 @@
 #include <string>
 #include "Scanner.h"
 #include "Token.h"
-#include "ExceptionLog.h"
 #include "TreeNode.h"
-
 
 class Parser {
 public:
@@ -22,6 +20,7 @@ public:
     void init_Parser(std::string filename);
     void start_Parser();
     void close_Parser();
+    void outputSyntaxTree(std::shared_ptr<TreeNode> root, int height);
 
 private:
     /** main function to match specific sentence **/
@@ -34,26 +33,36 @@ private:
     /**
         match rules
         to remove Left Recursion & Left Factor
+        LL(1) method, from the bottom to top, leftmost derivation !!!
      **/
-    std::unique_ptr<TreeNode>  expression();
-    std::unique_ptr<TreeNode>  Term();
-    std::unique_ptr<TreeNode>  Factor();
-    std::unique_ptr<TreeNode>  Component();
-    std::unique_ptr<TreeNode>  Atom();
+    std::shared_ptr<TreeNode>  expression();
+    std::shared_ptr<TreeNode>  Term();
+    std::shared_ptr<TreeNode>  Factor();
+    std::shared_ptr<TreeNode>  Component();
+    std::shared_ptr<TreeNode>  Atom();
+
+    /** build TreeNode **/
+    std::shared_ptr<TreeNode> buildTreeNode(TokenType tokenType, std::shared_ptr<TreeNode> left, std::shared_ptr<TreeNode> right);
+    std::shared_ptr<TreeNode> buildTreeNode(TokenType tokenType, double  value);
+    std::shared_ptr<TreeNode> buildTreeNode(TokenType tokenType, Func func, std::shared_ptr<TreeNode> node);
 
 
     /** output debug message **/
     void outputDebugMsg(std::string msg);
 
-private:
     Scanner scanner;
     Token token;
-    std::unique_ptr<TreeNode>  start_ptr;
-    std::unique_ptr<TreeNode>  end_ptr;
-    std::unique_ptr<TreeNode>  step_ptr;
-    std::unique_ptr<TreeNode>  x_ptr;
-    std::unique_ptr<TreeNode>  y_ptr;
-    std::unique_ptr<TreeNode>  angle_ptr;
+
+    /**
+     FOR T From start To end Step step_ptr Draw (x, y)
+     ROT is angle
+     */
+    std::shared_ptr<TreeNode>  start_ptr;
+    std::shared_ptr<TreeNode>  end_ptr;
+    std::shared_ptr<TreeNode>  step_ptr;
+    std::shared_ptr<TreeNode>  x_ptr;
+    std::shared_ptr<TreeNode>  y_ptr;
+    std::shared_ptr<TreeNode>  angle_ptr;
 
 
 };

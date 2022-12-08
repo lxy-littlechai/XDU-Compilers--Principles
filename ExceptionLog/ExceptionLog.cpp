@@ -18,8 +18,9 @@ ExceptionLog::ExceptionLog(int errRow, int errColumn, std::string errType) {
 void ExceptionLog::log() {
 
     if(message == "") {
-        std::cout << "错误类型: " << errType << std::endl;
-        std::cout << "错误所在行列: 第 " << errRow << " 行，第 " << errColumn << " 列" << std::endl;
+        std::cout << "---------------------------" << std::endl;
+        std::cout << "ErrType: " << errType << std::endl;
+        std::cout << "ErrRow:  " << errRow << " ErrorColumn " << errColumn << " " << std::endl;
     } else {
         std::cout << message << std::endl;
     }

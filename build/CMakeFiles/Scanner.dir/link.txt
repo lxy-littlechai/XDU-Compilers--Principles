@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -shared -Wl,-soname,libScanner.so -o libScanner.so CMakeFiles/Scanner.dir/Scanner/Scanner.cpp.o CMakeFiles/Scanner.dir/Scanner/Token.cpp.o 

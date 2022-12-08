@@ -1,0 +1,157 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-8ab9e7c4a2b6b564ba5e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						4
+					]
+				},
+				{
+					"build" : "Scanner",
+					"jsonFile" : "directory-Scanner-Debug-69351f928d8ec4404f1b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "Scanner",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "Parser",
+					"jsonFile" : "directory-Parser-Debug-59882b7fae02fdf45f99.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "Parser",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Plotter_interpreter",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "Scanner",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "Parser",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ExceptionLog_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ExceptionLog_lib-Debug-27ef55f542b8a9bfeb69.json",
+					"name" : "ExceptionLog_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "Parser::@74bff9814a543eacbe93",
+					"jsonFile" : "target-Parser-Debug-c0533e59437164af3f59.json",
+					"name" : "Parser",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Plotter_interpreter::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Plotter_interpreter-Debug-dd03e80a188b2a67057e.json",
+					"name" : "Plotter_interpreter",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Scanner::@32a5743141a4970811cd",
+					"jsonFile" : "target-Scanner-Debug-0ec324e9c13f0dc9cbb2.json",
+					"name" : "Scanner",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Scanner_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Scanner_lib-Debug-181ca9d0ab443f739ea8.json",
+					"name" : "Scanner_lib",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug",
+		"source" : "/home/littlechai/University/XDU-Compilers--Principles"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

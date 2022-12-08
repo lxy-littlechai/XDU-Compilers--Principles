@@ -9,6 +9,7 @@
 
 
 void Scanner::init_scanner(std::string fileName) {
+    row = 1, column = 1;
     try {
         file.open(fileName);
         if(!file.is_open()) {
@@ -59,7 +60,7 @@ Token Scanner::getToken() {
         }
         else if(ch == '\n') {
             row ++;
-            column = 0;
+            column = 1;
         }
         else if(!std::isspace(ch)) {
             break;
@@ -94,6 +95,7 @@ Token Scanner::getToken() {
         }
         if(ch == '.') { //decimal
            buffer += ch;
+           ch = getChar();
             while ((ch = file.peek())) {
                 if(std::isdigit(ch)) {
                     ch = getChar();
@@ -136,6 +138,7 @@ Token Scanner::getToken() {
                 ch = file.peek();
                 if(ch == '-') {
                     while((ch = getChar()) && ch != '\n' && ch != EOF);
+                    row ++;
                     return getToken();
                 }
                 else {
@@ -158,6 +161,7 @@ Token Scanner::getToken() {
                 ch = file.get();
                 if(ch == '/') {
                     while((ch = file.get()) && ch != '\n' && ch != EOF);
+                    row ++;
                     return getToken();
                 }
             }

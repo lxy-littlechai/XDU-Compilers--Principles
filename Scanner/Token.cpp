@@ -13,6 +13,7 @@ const static Token TokenTable[] = {
         Token(IS, "IS", 0.0, Func()),
         Token(FOR, "FOR", 0.0, Func()),
         Token(FROM, "FROM", 0.0, Func()),
+        Token(TO, "TO", 0.0, Func()),
         Token(T, "T", 0.0, Func()),
         Token(STEP, "STEP", 0.0, Func()),
         Token(DRAW, "DRAW", 0.0, Func()),

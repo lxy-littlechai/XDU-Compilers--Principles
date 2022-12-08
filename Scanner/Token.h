@@ -10,7 +10,7 @@
 enum TokenType {
     /* reserve key */
     ORIGIN, SCALE, ROT, IS,
-    To, STEP, DRAW, FOR, FROM,
+    TO, STEP, DRAW, FOR, FROM,
     /* constant & parameter & FUNC*/
     CONST_ID, T, FUNC,
     /* separator */

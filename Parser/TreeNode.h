@@ -12,15 +12,15 @@
 class TreeNode {
 public:
     TokenType tokenType;
-    double constNode;
-    double varNode;
+    double constValue;
+    double var;
     struct FuncNode {
-        std::unique_ptr<TreeNode> child;
+        std::shared_ptr<TreeNode> child;
         Func func;
     } funcNode;
 
     struct OperatorNode {
-        std::unique_ptr<TreeNode> Lchild, Rchild;
+        std::shared_ptr<TreeNode> Lchild, Rchild;
     } operatorNode;
 
 

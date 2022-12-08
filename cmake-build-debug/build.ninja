@@ -73,39 +73,82 @@ build Plotter_interpreter: CXX_EXECUTABLE_LINKER__Plotter_interpreter_Debug CMak
   TARGET_PDB = Plotter_interpreter.dbg
 
 # =============================================================================
-# Object build statements for SHARED_LIBRARY target ExceptionLog
+# Object build statements for SHARED_LIBRARY target Scanner_lib
 
 
 #############################################
-# Order-only phony target for ExceptionLog
+# Order-only phony target for Scanner_lib
 
-build cmake_object_order_depends_target_ExceptionLog: phony || CMakeFiles/ExceptionLog.dir
+build cmake_object_order_depends_target_Scanner_lib: phony || CMakeFiles/Scanner_lib.dir
 
-build CMakeFiles/ExceptionLog.dir/ExceptionLog/ExceptionLog.cpp.o: CXX_COMPILER__ExceptionLog_Debug /home/littlechai/University/XDU-Compilers--Principles/ExceptionLog/ExceptionLog.cpp || cmake_object_order_depends_target_ExceptionLog
-  DEFINES = -DExceptionLog_EXPORTS
-  DEP_FILE = CMakeFiles/ExceptionLog.dir/ExceptionLog/ExceptionLog.cpp.o.d
+build CMakeFiles/Scanner_lib.dir/Scanner/Scanner.cpp.o: CXX_COMPILER__Scanner_lib_Debug /home/littlechai/University/XDU-Compilers--Principles/Scanner/Scanner.cpp || cmake_object_order_depends_target_Scanner_lib
+  DEFINES = -DScanner_lib_EXPORTS
+  DEP_FILE = CMakeFiles/Scanner_lib.dir/Scanner/Scanner.cpp.o.d
   FLAGS = -g -fPIC -std=gnu++20
   INCLUDES = -I/home/littlechai/University/XDU-Compilers--Principles/headers
-  OBJECT_DIR = CMakeFiles/ExceptionLog.dir
-  OBJECT_FILE_DIR = CMakeFiles/ExceptionLog.dir/ExceptionLog
+  OBJECT_DIR = CMakeFiles/Scanner_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles/Scanner_lib.dir/Scanner
+
+build CMakeFiles/Scanner_lib.dir/Scanner/Token.cpp.o: CXX_COMPILER__Scanner_lib_Debug /home/littlechai/University/XDU-Compilers--Principles/Scanner/Token.cpp || cmake_object_order_depends_target_Scanner_lib
+  DEFINES = -DScanner_lib_EXPORTS
+  DEP_FILE = CMakeFiles/Scanner_lib.dir/Scanner/Token.cpp.o.d
+  FLAGS = -g -fPIC -std=gnu++20
+  INCLUDES = -I/home/littlechai/University/XDU-Compilers--Principles/headers
+  OBJECT_DIR = CMakeFiles/Scanner_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles/Scanner_lib.dir/Scanner
 
 
 # =============================================================================
-# Link build statements for SHARED_LIBRARY target ExceptionLog
+# Link build statements for SHARED_LIBRARY target Scanner_lib
 
 
 #############################################
-# Link the shared library libExceptionLog.so
+# Link the shared library libScanner_lib.so
 
-build libExceptionLog.so: CXX_SHARED_LIBRARY_LINKER__ExceptionLog_Debug CMakeFiles/ExceptionLog.dir/ExceptionLog/ExceptionLog.cpp.o
+build libScanner_lib.so: CXX_SHARED_LIBRARY_LINKER__Scanner_lib_Debug CMakeFiles/Scanner_lib.dir/Scanner/Scanner.cpp.o CMakeFiles/Scanner_lib.dir/Scanner/Token.cpp.o
   LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = CMakeFiles/ExceptionLog.dir
+  OBJECT_DIR = CMakeFiles/Scanner_lib.dir
   POST_BUILD = :
   PRE_LINK = :
-  SONAME = libExceptionLog.so
+  SONAME = libScanner_lib.so
   SONAME_FLAG = -Wl,-soname,
-  TARGET_FILE = libExceptionLog.so
-  TARGET_PDB = ExceptionLog.so.dbg
+  TARGET_FILE = libScanner_lib.so
+  TARGET_PDB = Scanner_lib.so.dbg
+
+# =============================================================================
+# Object build statements for SHARED_LIBRARY target ExceptionLog_lib
+
+
+#############################################
+# Order-only phony target for ExceptionLog_lib
+
+build cmake_object_order_depends_target_ExceptionLog_lib: phony || CMakeFiles/ExceptionLog_lib.dir
+
+build CMakeFiles/ExceptionLog_lib.dir/ExceptionLog/ExceptionLog.cpp.o: CXX_COMPILER__ExceptionLog_lib_Debug /home/littlechai/University/XDU-Compilers--Principles/ExceptionLog/ExceptionLog.cpp || cmake_object_order_depends_target_ExceptionLog_lib
+  DEFINES = -DExceptionLog_lib_EXPORTS
+  DEP_FILE = CMakeFiles/ExceptionLog_lib.dir/ExceptionLog/ExceptionLog.cpp.o.d
+  FLAGS = -g -fPIC -std=gnu++20
+  INCLUDES = -I/home/littlechai/University/XDU-Compilers--Principles/headers
+  OBJECT_DIR = CMakeFiles/ExceptionLog_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles/ExceptionLog_lib.dir/ExceptionLog
+
+
+# =============================================================================
+# Link build statements for SHARED_LIBRARY target ExceptionLog_lib
+
+
+#############################################
+# Link the shared library libExceptionLog_lib.so
+
+build libExceptionLog_lib.so: CXX_SHARED_LIBRARY_LINKER__ExceptionLog_lib_Debug CMakeFiles/ExceptionLog_lib.dir/ExceptionLog/ExceptionLog.cpp.o
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles/ExceptionLog_lib.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  SONAME = libExceptionLog_lib.so
+  SONAME_FLAG = -Wl,-soname,
+  TARGET_FILE = libExceptionLog_lib.so
+  TARGET_PDB = ExceptionLog_lib.so.dbg
 
 
 #############################################
@@ -216,9 +259,9 @@ build Scanner/CMakeFiles/Scanner.dir/Scanner.cpp.o: CXX_COMPILER__Scanner_Debug 
 #############################################
 # Link the executable Scanner/Scanner
 
-build Scanner/Scanner: CXX_EXECUTABLE_LINKER__Scanner_Debug Scanner/CMakeFiles/Scanner.dir/main.cpp.o Scanner/CMakeFiles/Scanner.dir/Token.cpp.o Scanner/CMakeFiles/Scanner.dir/Scanner.cpp.o | ../Scanner/../lib/libExceptionLog.so
+build Scanner/Scanner: CXX_EXECUTABLE_LINKER__Scanner_Debug Scanner/CMakeFiles/Scanner.dir/main.cpp.o Scanner/CMakeFiles/Scanner.dir/Token.cpp.o Scanner/CMakeFiles/Scanner.dir/Scanner.cpp.o | ../Scanner/../lib/libExceptionLog_lib.so
   FLAGS = -g
-  LINK_LIBRARIES = -Wl,-rpath,/home/littlechai/University/XDU-Compilers--Principles/Scanner/../lib:  ../Scanner/../lib/libExceptionLog.so
+  LINK_LIBRARIES = -Wl,-rpath,/home/littlechai/University/XDU-Compilers--Principles/Scanner/../lib  ../Scanner/../lib/libExceptionLog_lib.so
   OBJECT_DIR = Scanner/CMakeFiles/Scanner.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -334,9 +377,9 @@ build Parser/CMakeFiles/Parser.dir/Parser.cpp.o: CXX_COMPILER__Parser_Debug /hom
 #############################################
 # Link the executable Parser/Parser
 
-build Parser/Parser: CXX_EXECUTABLE_LINKER__Parser_Debug Parser/CMakeFiles/Parser.dir/main.cpp.o Parser/CMakeFiles/Parser.dir/TreeNode.cpp.o Parser/CMakeFiles/Parser.dir/Parser.cpp.o | ../Parser/../lib/libScanner.so ../Parser/../lib/libExceptionLog.so
+build Parser/Parser: CXX_EXECUTABLE_LINKER__Parser_Debug Parser/CMakeFiles/Parser.dir/main.cpp.o Parser/CMakeFiles/Parser.dir/TreeNode.cpp.o Parser/CMakeFiles/Parser.dir/Parser.cpp.o | ../Parser/../lib/libScanner_lib.so ../Parser/../lib/libExceptionLog_lib.so
   FLAGS = -g
-  LINK_LIBRARIES = -Wl,-rpath,/home/littlechai/University/XDU-Compilers--Principles/Parser/../lib  ../Parser/../lib/libScanner.so  ../Parser/../lib/libExceptionLog.so
+  LINK_LIBRARIES = -Wl,-rpath,/home/littlechai/University/XDU-Compilers--Principles/Parser/../lib  ../Parser/../lib/libScanner_lib.so  ../Parser/../lib/libExceptionLog_lib.so
   OBJECT_DIR = Parser/CMakeFiles/Parser.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -412,11 +455,13 @@ build Parser/install/strip: phony Parser/CMakeFiles/install/strip.util
 # =============================================================================
 # Target aliases.
 
-build ExceptionLog: phony libExceptionLog.so
+build ExceptionLog_lib: phony libExceptionLog_lib.so
 
 build Parser: phony Parser/Parser
 
 build Scanner: phony Scanner/Scanner
+
+build Scanner_lib: phony libScanner_lib.so
 
 # =============================================================================
 # Folder targets.
@@ -426,7 +471,7 @@ build Scanner: phony Scanner/Scanner
 #############################################
 # Folder: /home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug
 
-build all: phony Plotter_interpreter libExceptionLog.so Scanner/all Parser/all
+build all: phony Plotter_interpreter libScanner_lib.so libExceptionLog_lib.so Scanner/all Parser/all
 
 # =============================================================================
 

@@ -1,10 +1,12 @@
 #include <iostream>
-#include "Scanner.h"
+#include "Parser.h"
 
 int main() {
-    Scanner scanner;
-    scanner.init_scanner("/home/littlechai/University/XDU-Compilers--Principles/test.txt");
-    scanner.start_scanner();
-    scanner.close_scanner();
+    std::string fileName = "/home/littlechai/University/XDU-Compilers--Principles/test.txt";
+    Parser parser;
+    parser.init_Parser(fileName);
+    parser.start_Parser();
+    parser.close_Parser();
+
     return 0;
 }

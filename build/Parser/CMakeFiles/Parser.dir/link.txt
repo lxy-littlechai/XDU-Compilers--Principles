@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/Parser.dir/main.cpp.o CMakeFiles/Parser.dir/TreeNode.cpp.o CMakeFiles/Parser.dir/Parser.cpp.o -o Parser  -Wl,-rpath,/home/littlechai/University/XDU-Compilers--Principles/Parser/../lib ../../Parser/../lib/libScanner.so ../../Parser/../lib/libExceptionLog.so 
