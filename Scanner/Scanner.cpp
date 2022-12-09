@@ -158,12 +158,15 @@ Token Scanner::getToken() {
                 break;
             }
             case '/': {
-                ch = file.get();
+                ch = file.peek();
                 if(ch == '/') {
                     while((ch = file.get()) && ch != '\n' && ch != EOF);
                     row ++;
                     return getToken();
+                } else {
+                    token.tokenType = TokenType::DIV;
                 }
+                break;
             }
             default: {
                 token.tokenType = TokenType::ERR_TOKEN;

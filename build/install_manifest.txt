@@ -1,0 +1,9 @@
+/home/littlechai/University/XDU-Compilers--Principles/headers/Scanner.h
+/home/littlechai/University/XDU-Compilers--Principles/headers/Token.h
+/home/littlechai/University/XDU-Compilers--Principles/headers/Func.h
+/home/littlechai/University/XDU-Compilers--Principles/headers/Parser.h
+/home/littlechai/University/XDU-Compilers--Principles/headers/TreeNode.h
+/home/littlechai/University/XDU-Compilers--Principles/headers/ExceptionLog.h
+/home/littlechai/University/XDU-Compilers--Principles/lib/libScanner_lib.so
+/home/littlechai/University/XDU-Compilers--Principles/lib/libParser_lib.so
+/home/littlechai/University/XDU-Compilers--Principles/lib/libExceptionLog_lib.so

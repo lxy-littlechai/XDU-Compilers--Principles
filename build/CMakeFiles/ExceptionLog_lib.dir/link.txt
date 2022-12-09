@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -shared -Wl,-soname,libExceptionLog_lib.so -o libExceptionLog_lib.so CMakeFiles/ExceptionLog_lib.dir/ExceptionLog/ExceptionLog.cpp.o 

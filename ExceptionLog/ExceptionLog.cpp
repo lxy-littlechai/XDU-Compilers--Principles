@@ -25,5 +25,6 @@ void ExceptionLog::log() {
         std::cout << message << std::endl;
     }
 
+    exit(0);
 
 }

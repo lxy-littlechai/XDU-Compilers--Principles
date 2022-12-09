@@ -1,5 +1,6 @@
 /home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/CMakeFiles/Plotter_interpreter.dir
 /home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/CMakeFiles/Scanner_lib.dir
+/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/CMakeFiles/Parser_lib.dir
 /home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/CMakeFiles/ExceptionLog_lib.dir
 /home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/CMakeFiles/rebuild_cache.dir
@@ -21,3 +22,10 @@
 /home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/Parser/CMakeFiles/install.dir
 /home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/Parser/CMakeFiles/install/local.dir
 /home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/Parser/CMakeFiles/install/strip.dir
+/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/Semantic/CMakeFiles/Semantic.dir
+/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/Semantic/CMakeFiles/edit_cache.dir
+/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/Semantic/CMakeFiles/rebuild_cache.dir
+/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/Semantic/CMakeFiles/list_install_components.dir
+/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/Semantic/CMakeFiles/install.dir
+/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/Semantic/CMakeFiles/install/local.dir
+/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/Semantic/CMakeFiles/install/strip.dir

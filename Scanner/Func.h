@@ -9,7 +9,12 @@
 
 class Func {
 public:
-    virtual double call(double num) {
+    virtual double call(double num) = 0;
+};
+
+class NoFunc: public Func {
+public:
+    double call(double num) override {
         return num;
     }
 };

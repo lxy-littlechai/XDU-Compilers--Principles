@@ -1,0 +1,3 @@
+/home/littlechai/University/XDU-Compilers--Principles/Semantic/cmake-build-debug/CMakeFiles/Semantic.dir
+/home/littlechai/University/XDU-Compilers--Principles/Semantic/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/littlechai/University/XDU-Compilers--Principles/Semantic/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -7,7 +7,6 @@
 #include "ExceptionLog.h"
 
 void Parser::init_Parser(std::string filename) {
-    outputDebugMsg("in Parser");
     scanner.init_scanner(filename);
 }
 
@@ -18,18 +17,20 @@ void Parser::start_Parser() {
         judgeSentenceType();
         matchToken(TokenType::SEMICO);
     }
+
+
 }
 
 void Parser::close_Parser() {
     scanner.close_scanner();
-    outputDebugMsg("out Parser");
 }
 
 Token Parser::fetchToken() {
     Token token = scanner.getToken();
+//    std::cout << token.token << std::endl;
     try  {
         if(token.tokenType == TokenType::ERR_TOKEN) {
-            throw ExceptionLog(scanner.row, scanner.column, "Error in tokenType");
+            throw ExceptionLog(scanner.row, scanner.column, "Error in tokenType when fetchToken");
         }
     } catch (ExceptionLog &e) {
         e.log();
@@ -40,10 +41,9 @@ Token Parser::fetchToken() {
 void Parser::matchToken(TokenType tokenType) {
     try {
         if(token.tokenType != tokenType) {
-            throw ExceptionLog(scanner.row, scanner.column, "Error in match tokenType");
+            throw ExceptionLog(scanner.row, scanner.column, "Error in match tokenType when matchToken");
         }
         token = fetchToken();
-        std::cout << token.token  << std::endl;
     } catch (ExceptionLog& e) {
         e.log();
     }
@@ -191,7 +191,6 @@ std::shared_ptr<TreeNode> Parser::Component() {
 }
 
 // Atom -> CONST_ID | T | FUNC L_BRACKET expression R_BRACKET
-
 std::shared_ptr<TreeNode> Parser::Atom() {
     auto t = token;
     auto node = std::make_shared<TreeNode>();
@@ -245,12 +244,12 @@ std::shared_ptr<TreeNode> Parser::buildTreeNode(TokenType tokenType, double valu
         node->constValue = value;
     }
     else {
-        node->var = value;
+        node->var = &value;
     }
     return node;
 }
 
-std::shared_ptr<TreeNode> Parser::buildTreeNode(TokenType tokenType, Func func, std::shared_ptr<TreeNode> t) {
+std::shared_ptr<TreeNode> Parser::buildTreeNode(TokenType tokenType, std::shared_ptr<Func> func, std::shared_ptr<TreeNode> t) {
     auto node = std::make_shared<TreeNode>();
     node->tokenType = tokenType;
     node->funcNode.func = func;
