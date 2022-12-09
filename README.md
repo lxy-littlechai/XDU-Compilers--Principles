@@ -1,6 +1,16 @@
 # XDU-Compilers--Principles
  xdu编译原理大作业
 
+## 开发环境
+
+- Ubuntu 22.04
+- opencv
+- clion
+
+## 使用说明
+
+执行Semantic文件夹下的main中输入文件路径，执行main函数
+
 ## 系统架构
 
 - 词法分析 Scanner

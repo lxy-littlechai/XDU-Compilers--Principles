@@ -151,6 +151,57 @@ build libParser_lib.so: CXX_SHARED_LIBRARY_LINKER__Parser_lib_Debug CMakeFiles/P
   TARGET_PDB = Parser_lib.so.dbg
 
 # =============================================================================
+# Object build statements for SHARED_LIBRARY target Semantic_lib
+
+
+#############################################
+# Order-only phony target for Semantic_lib
+
+build cmake_object_order_depends_target_Semantic_lib: phony || CMakeFiles/Semantic_lib.dir
+
+build CMakeFiles/Semantic_lib.dir/Semantic/Semantic.cpp.o: CXX_COMPILER__Semantic_lib_Debug /home/littlechai/University/XDU-Compilers--Principles/Semantic/Semantic.cpp || cmake_object_order_depends_target_Semantic_lib
+  DEFINES = -DSemantic_lib_EXPORTS
+  DEP_FILE = CMakeFiles/Semantic_lib.dir/Semantic/Semantic.cpp.o.d
+  FLAGS = -g -fPIC -std=gnu++20
+  INCLUDES = -I/home/littlechai/University/XDU-Compilers--Principles/headers
+  OBJECT_DIR = CMakeFiles/Semantic_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles/Semantic_lib.dir/Semantic
+
+build CMakeFiles/Semantic_lib.dir/Semantic/Plotter.cpp.o: CXX_COMPILER__Semantic_lib_Debug /home/littlechai/University/XDU-Compilers--Principles/Semantic/Plotter.cpp || cmake_object_order_depends_target_Semantic_lib
+  DEFINES = -DSemantic_lib_EXPORTS
+  DEP_FILE = CMakeFiles/Semantic_lib.dir/Semantic/Plotter.cpp.o.d
+  FLAGS = -g -fPIC -std=gnu++20
+  INCLUDES = -I/home/littlechai/University/XDU-Compilers--Principles/headers
+  OBJECT_DIR = CMakeFiles/Semantic_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles/Semantic_lib.dir/Semantic
+
+build CMakeFiles/Semantic_lib.dir/Semantic/Point.cpp.o: CXX_COMPILER__Semantic_lib_Debug /home/littlechai/University/XDU-Compilers--Principles/Semantic/Point.cpp || cmake_object_order_depends_target_Semantic_lib
+  DEFINES = -DSemantic_lib_EXPORTS
+  DEP_FILE = CMakeFiles/Semantic_lib.dir/Semantic/Point.cpp.o.d
+  FLAGS = -g -fPIC -std=gnu++20
+  INCLUDES = -I/home/littlechai/University/XDU-Compilers--Principles/headers
+  OBJECT_DIR = CMakeFiles/Semantic_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles/Semantic_lib.dir/Semantic
+
+
+# =============================================================================
+# Link build statements for SHARED_LIBRARY target Semantic_lib
+
+
+#############################################
+# Link the shared library libSemantic_lib.so
+
+build libSemantic_lib.so: CXX_SHARED_LIBRARY_LINKER__Semantic_lib_Debug CMakeFiles/Semantic_lib.dir/Semantic/Semantic.cpp.o CMakeFiles/Semantic_lib.dir/Semantic/Plotter.cpp.o CMakeFiles/Semantic_lib.dir/Semantic/Point.cpp.o
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles/Semantic_lib.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  SONAME = libSemantic_lib.so
+  SONAME_FLAG = -Wl,-soname,
+  TARGET_FILE = libSemantic_lib.so
+  TARGET_PDB = Semantic_lib.so.dbg
+
+# =============================================================================
 # Object build statements for SHARED_LIBRARY target ExceptionLog_lib
 
 
@@ -620,6 +671,8 @@ build Scanner_lib: phony libScanner_lib.so
 
 build Semantic: phony Semantic/Semantic
 
+build Semantic_lib: phony libSemantic_lib.so
+
 # =============================================================================
 # Folder targets.
 
@@ -628,7 +681,7 @@ build Semantic: phony Semantic/Semantic
 #############################################
 # Folder: /home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug
 
-build all: phony Plotter_interpreter libScanner_lib.so libParser_lib.so libExceptionLog_lib.so Scanner/all Parser/all Semantic/all
+build all: phony Plotter_interpreter libScanner_lib.so libParser_lib.so libSemantic_lib.so libExceptionLog_lib.so Scanner/all Parser/all Semantic/all
 
 # =============================================================================
 

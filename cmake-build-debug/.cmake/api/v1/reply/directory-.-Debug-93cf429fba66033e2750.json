@@ -67,6 +67,12 @@
 				"file" : 0,
 				"line" : 34,
 				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 38,
+				"parent" : 0
 			}
 		]
 	},
@@ -158,6 +164,18 @@
 		},
 		{
 			"backtrace" : 9,
+			"component" : "Unspecified",
+			"destination" : "/home/littlechai/University/XDU-Compilers--Principles/lib",
+			"paths" : 
+			[
+				"libSemantic_lib.so"
+			],
+			"targetId" : "Semantic_lib::@6890427a1f51a3e7e1df",
+			"targetIndex" : 7,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 10,
 			"component" : "Unspecified",
 			"destination" : "/home/littlechai/University/XDU-Compilers--Principles/lib",
 			"paths" : 

@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "libExceptionLog_lib.so"
+			"path" : "libSemantic_lib.so"
 		}
 	],
 	"backtrace" : 1,
@@ -58,7 +58,7 @@
 			"defines" : 
 			[
 				{
-					"define" : "ExceptionLog_lib_EXPORTS"
+					"define" : "Semantic_lib_EXPORTS"
 				}
 			],
 			"includes" : 
@@ -79,11 +79,13 @@
 			},
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1,
+				2
 			]
 		}
 	],
-	"id" : "ExceptionLog_lib::@6890427a1f51a3e7e1df",
+	"id" : "Semantic_lib::@6890427a1f51a3e7e1df",
 	"install" : 
 	{
 		"destinations" : 
@@ -113,8 +115,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "ExceptionLog_lib",
-	"nameOnDisk" : "libExceptionLog_lib.so",
+	"name" : "Semantic_lib",
+	"nameOnDisk" : "libSemantic_lib.so",
 	"paths" : 
 	{
 		"build" : ".",
@@ -126,7 +128,9 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1,
+				2
 			]
 		}
 	],
@@ -135,7 +139,19 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "ExceptionLog/ExceptionLog.cpp",
+			"path" : "Semantic/Semantic.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Semantic/Plotter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Semantic/Point.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

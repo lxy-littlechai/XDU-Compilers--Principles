@@ -13,7 +13,7 @@
 						3
 					],
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-877f545fe1e6a407ceaa.json",
+					"jsonFile" : "directory-.-Debug-93cf429fba66033e2750.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.21"
@@ -25,7 +25,8 @@
 						0,
 						2,
 						3,
-						5
+						5,
+						7
 					]
 				},
 				{
@@ -94,7 +95,8 @@
 						0,
 						2,
 						3,
-						5
+						5,
+						7
 					]
 				},
 				{
@@ -139,7 +141,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ExceptionLog_lib::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ExceptionLog_lib-Debug-9c6f3a861885717ba5e6.json",
+					"jsonFile" : "target-ExceptionLog_lib-Debug-f6e962c6d6e422d0200f.json",
 					"name" : "ExceptionLog_lib",
 					"projectIndex" : 0
 				},
@@ -184,6 +186,13 @@
 					"jsonFile" : "target-Semantic-Debug-d08852ae1573fe691fd1.json",
 					"name" : "Semantic",
 					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Semantic_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Semantic_lib-Debug-2e907e63e0ac770ed6fb.json",
+					"name" : "Semantic_lib",
+					"projectIndex" : 0
 				}
 			]
 		}

@@ -29,7 +29,14 @@ install(TARGETS Scanner_lib LIBRARY DESTINATION ${PROJECT_SOURCE_DIR}/lib)
 add_library(Parser_lib SHARED ${PROJECT_SOURCE_DIR}/Parser/Parser.cpp)
 install(TARGETS Parser_lib LIBRARY DESTINATION ${PROJECT_SOURCE_DIR}/lib)
 
+# dynamic link Semantic
+add_library(Semantic_lib SHARED ${PROJECT_SOURCE_DIR}/Semantic/Semantic.cpp ${PROJECT_SOURCE_DIR}/Semantic/Plotter.cpp ${PROJECT_SOURCE_DIR}/Semantic/Point.cpp)
+install(TARGETS Semantic_lib LIBRARY DESTINATION ${PROJECT_SOURCE_DIR}/lib)
+
 # dynamic link ExceptionLog
 add_library(ExceptionLog_lib SHARED ${PROJECT_SOURCE_DIR}/ExceptionLog/ExceptionLog.cpp)
 install(TARGETS ExceptionLog_lib LIBRARY DESTINATION ${PROJECT_SOURCE_DIR}/lib)
+
+#target_link_libraries(Plotter_interpreter ${PROJECT_SOURCE_DIR}/../lib/libExceptionLog_lib.so ${PROJECT_SOURCE_DIR}/../lib/Scanner_lib
+#        ${PROJECT_SOURCE_DIR}/../lib/Parser_lib.so ${PROJECT_SOURCE_DIR}/../lib/Semantic_lib.so)
 

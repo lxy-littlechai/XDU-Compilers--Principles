@@ -184,6 +184,33 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}/home/littlechai/University/XDU-Compilers--Principles/lib/libSemantic_lib.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/littlechai/University/XDU-Compilers--Principles/lib/libSemantic_lib.so")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}/home/littlechai/University/XDU-Compilers--Principles/lib/libSemantic_lib.so"
+         RPATH "")
+  endif()
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "/home/littlechai/University/XDU-Compilers--Principles/lib/libSemantic_lib.so")
+  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  file(INSTALL DESTINATION "/home/littlechai/University/XDU-Compilers--Principles/lib" TYPE SHARED_LIBRARY FILES "/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug/libSemantic_lib.so")
+  if(EXISTS "$ENV{DESTDIR}/home/littlechai/University/XDU-Compilers--Principles/lib/libSemantic_lib.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/littlechai/University/XDU-Compilers--Principles/lib/libSemantic_lib.so")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/littlechai/University/XDU-Compilers--Principles/lib/libSemantic_lib.so")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}/home/littlechai/University/XDU-Compilers--Principles/lib/libExceptionLog_lib.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/home/littlechai/University/XDU-Compilers--Principles/lib/libExceptionLog_lib.so")
     file(RPATH_CHECK
