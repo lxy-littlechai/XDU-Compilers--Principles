@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -shared -Wl,-soname,libSemantic_lib.so -o libSemantic_lib.so CMakeFiles/Semantic_lib.dir/Semantic/Semantic.cpp.o CMakeFiles/Semantic_lib.dir/Semantic/Plotter.cpp.o CMakeFiles/Semantic_lib.dir/Semantic/Point.cpp.o 

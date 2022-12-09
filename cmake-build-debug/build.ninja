@@ -52,7 +52,7 @@ build cmake_object_order_depends_target_Plotter_interpreter: phony || CMakeFiles
 build CMakeFiles/Plotter_interpreter.dir/main.cpp.o: CXX_COMPILER__Plotter_interpreter_Debug /home/littlechai/University/XDU-Compilers--Principles/main.cpp || cmake_object_order_depends_target_Plotter_interpreter
   DEP_FILE = CMakeFiles/Plotter_interpreter.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++20
-  INCLUDES = -I/home/littlechai/University/XDU-Compilers--Principles/headers
+  INCLUDES = -I/home/littlechai/University/XDU-Compilers--Principles/headers -isystem /usr/local/include/opencv4
   OBJECT_DIR = CMakeFiles/Plotter_interpreter.dir
   OBJECT_FILE_DIR = CMakeFiles/Plotter_interpreter.dir
 
@@ -64,8 +64,9 @@ build CMakeFiles/Plotter_interpreter.dir/main.cpp.o: CXX_COMPILER__Plotter_inter
 #############################################
 # Link the executable Plotter_interpreter
 
-build Plotter_interpreter: CXX_EXECUTABLE_LINKER__Plotter_interpreter_Debug CMakeFiles/Plotter_interpreter.dir/main.cpp.o
+build Plotter_interpreter: CXX_EXECUTABLE_LINKER__Plotter_interpreter_Debug CMakeFiles/Plotter_interpreter.dir/main.cpp.o | /usr/local/lib/libopencv_gapi.so.4.6.0 /usr/local/lib/libopencv_highgui.so.4.6.0 /usr/local/lib/libopencv_ml.so.4.6.0 /usr/local/lib/libopencv_objdetect.so.4.6.0 /usr/local/lib/libopencv_photo.so.4.6.0 /usr/local/lib/libopencv_stitching.so.4.6.0 /usr/local/lib/libopencv_video.so.4.6.0 /usr/local/lib/libopencv_videoio.so.4.6.0 ../lib/liballLib.so ../lib/libopencv_highgui.so /usr/local/lib/libopencv_imgcodecs.so.4.6.0 /usr/local/lib/libopencv_dnn.so.4.6.0 /usr/local/lib/libopencv_calib3d.so.4.6.0 /usr/local/lib/libopencv_features2d.so.4.6.0 /usr/local/lib/libopencv_flann.so.4.6.0 /usr/local/lib/libopencv_imgproc.so.4.6.0 /usr/local/lib/libopencv_core.so.4.6.0
   FLAGS = -g
+  LINK_LIBRARIES = -Wl,-rpath,/home/littlechai/University/XDU-Compilers--Principles/lib:/usr/local/lib  /usr/local/lib/libopencv_gapi.so.4.6.0  /usr/local/lib/libopencv_highgui.so.4.6.0  /usr/local/lib/libopencv_ml.so.4.6.0  /usr/local/lib/libopencv_objdetect.so.4.6.0  /usr/local/lib/libopencv_photo.so.4.6.0  /usr/local/lib/libopencv_stitching.so.4.6.0  /usr/local/lib/libopencv_video.so.4.6.0  /usr/local/lib/libopencv_videoio.so.4.6.0  ../lib/liballLib.so  ../lib/libopencv_highgui.so  /usr/local/lib/libopencv_imgcodecs.so.4.6.0  /usr/local/lib/libopencv_dnn.so.4.6.0  /usr/local/lib/libopencv_calib3d.so.4.6.0  /usr/local/lib/libopencv_features2d.so.4.6.0  /usr/local/lib/libopencv_flann.so.4.6.0  /usr/local/lib/libopencv_imgproc.so.4.6.0  /usr/local/lib/libopencv_core.so.4.6.0
   OBJECT_DIR = CMakeFiles/Plotter_interpreter.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -73,168 +74,87 @@ build Plotter_interpreter: CXX_EXECUTABLE_LINKER__Plotter_interpreter_Debug CMak
   TARGET_PDB = Plotter_interpreter.dbg
 
 # =============================================================================
-# Object build statements for SHARED_LIBRARY target Scanner_lib
+# Object build statements for SHARED_LIBRARY target allLib
 
 
 #############################################
-# Order-only phony target for Scanner_lib
+# Order-only phony target for allLib
 
-build cmake_object_order_depends_target_Scanner_lib: phony || CMakeFiles/Scanner_lib.dir
+build cmake_object_order_depends_target_allLib: phony || CMakeFiles/allLib.dir
 
-build CMakeFiles/Scanner_lib.dir/Scanner/Scanner.cpp.o: CXX_COMPILER__Scanner_lib_Debug /home/littlechai/University/XDU-Compilers--Principles/Scanner/Scanner.cpp || cmake_object_order_depends_target_Scanner_lib
-  DEFINES = -DScanner_lib_EXPORTS
-  DEP_FILE = CMakeFiles/Scanner_lib.dir/Scanner/Scanner.cpp.o.d
+build CMakeFiles/allLib.dir/Scanner/Scanner.cpp.o: CXX_COMPILER__allLib_Debug /home/littlechai/University/XDU-Compilers--Principles/Scanner/Scanner.cpp || cmake_object_order_depends_target_allLib
+  DEFINES = -DallLib_EXPORTS
+  DEP_FILE = CMakeFiles/allLib.dir/Scanner/Scanner.cpp.o.d
   FLAGS = -g -fPIC -std=gnu++20
-  INCLUDES = -I/home/littlechai/University/XDU-Compilers--Principles/headers
-  OBJECT_DIR = CMakeFiles/Scanner_lib.dir
-  OBJECT_FILE_DIR = CMakeFiles/Scanner_lib.dir/Scanner
+  INCLUDES = -I/home/littlechai/University/XDU-Compilers--Principles/headers -I/usr/local/include/opencv4
+  OBJECT_DIR = CMakeFiles/allLib.dir
+  OBJECT_FILE_DIR = CMakeFiles/allLib.dir/Scanner
 
-build CMakeFiles/Scanner_lib.dir/Scanner/Token.cpp.o: CXX_COMPILER__Scanner_lib_Debug /home/littlechai/University/XDU-Compilers--Principles/Scanner/Token.cpp || cmake_object_order_depends_target_Scanner_lib
-  DEFINES = -DScanner_lib_EXPORTS
-  DEP_FILE = CMakeFiles/Scanner_lib.dir/Scanner/Token.cpp.o.d
+build CMakeFiles/allLib.dir/Scanner/Token.cpp.o: CXX_COMPILER__allLib_Debug /home/littlechai/University/XDU-Compilers--Principles/Scanner/Token.cpp || cmake_object_order_depends_target_allLib
+  DEFINES = -DallLib_EXPORTS
+  DEP_FILE = CMakeFiles/allLib.dir/Scanner/Token.cpp.o.d
   FLAGS = -g -fPIC -std=gnu++20
-  INCLUDES = -I/home/littlechai/University/XDU-Compilers--Principles/headers
-  OBJECT_DIR = CMakeFiles/Scanner_lib.dir
-  OBJECT_FILE_DIR = CMakeFiles/Scanner_lib.dir/Scanner
+  INCLUDES = -I/home/littlechai/University/XDU-Compilers--Principles/headers -I/usr/local/include/opencv4
+  OBJECT_DIR = CMakeFiles/allLib.dir
+  OBJECT_FILE_DIR = CMakeFiles/allLib.dir/Scanner
+
+build CMakeFiles/allLib.dir/Parser/Parser.cpp.o: CXX_COMPILER__allLib_Debug /home/littlechai/University/XDU-Compilers--Principles/Parser/Parser.cpp || cmake_object_order_depends_target_allLib
+  DEFINES = -DallLib_EXPORTS
+  DEP_FILE = CMakeFiles/allLib.dir/Parser/Parser.cpp.o.d
+  FLAGS = -g -fPIC -std=gnu++20
+  INCLUDES = -I/home/littlechai/University/XDU-Compilers--Principles/headers -I/usr/local/include/opencv4
+  OBJECT_DIR = CMakeFiles/allLib.dir
+  OBJECT_FILE_DIR = CMakeFiles/allLib.dir/Parser
+
+build CMakeFiles/allLib.dir/Semantic/Semantic.cpp.o: CXX_COMPILER__allLib_Debug /home/littlechai/University/XDU-Compilers--Principles/Semantic/Semantic.cpp || cmake_object_order_depends_target_allLib
+  DEFINES = -DallLib_EXPORTS
+  DEP_FILE = CMakeFiles/allLib.dir/Semantic/Semantic.cpp.o.d
+  FLAGS = -g -fPIC -std=gnu++20
+  INCLUDES = -I/home/littlechai/University/XDU-Compilers--Principles/headers -I/usr/local/include/opencv4
+  OBJECT_DIR = CMakeFiles/allLib.dir
+  OBJECT_FILE_DIR = CMakeFiles/allLib.dir/Semantic
+
+build CMakeFiles/allLib.dir/Semantic/Plotter.cpp.o: CXX_COMPILER__allLib_Debug /home/littlechai/University/XDU-Compilers--Principles/Semantic/Plotter.cpp || cmake_object_order_depends_target_allLib
+  DEFINES = -DallLib_EXPORTS
+  DEP_FILE = CMakeFiles/allLib.dir/Semantic/Plotter.cpp.o.d
+  FLAGS = -g -fPIC -std=gnu++20
+  INCLUDES = -I/home/littlechai/University/XDU-Compilers--Principles/headers -I/usr/local/include/opencv4
+  OBJECT_DIR = CMakeFiles/allLib.dir
+  OBJECT_FILE_DIR = CMakeFiles/allLib.dir/Semantic
+
+build CMakeFiles/allLib.dir/Semantic/Point.cpp.o: CXX_COMPILER__allLib_Debug /home/littlechai/University/XDU-Compilers--Principles/Semantic/Point.cpp || cmake_object_order_depends_target_allLib
+  DEFINES = -DallLib_EXPORTS
+  DEP_FILE = CMakeFiles/allLib.dir/Semantic/Point.cpp.o.d
+  FLAGS = -g -fPIC -std=gnu++20
+  INCLUDES = -I/home/littlechai/University/XDU-Compilers--Principles/headers -I/usr/local/include/opencv4
+  OBJECT_DIR = CMakeFiles/allLib.dir
+  OBJECT_FILE_DIR = CMakeFiles/allLib.dir/Semantic
+
+build CMakeFiles/allLib.dir/ExceptionLog/ExceptionLog.cpp.o: CXX_COMPILER__allLib_Debug /home/littlechai/University/XDU-Compilers--Principles/ExceptionLog/ExceptionLog.cpp || cmake_object_order_depends_target_allLib
+  DEFINES = -DallLib_EXPORTS
+  DEP_FILE = CMakeFiles/allLib.dir/ExceptionLog/ExceptionLog.cpp.o.d
+  FLAGS = -g -fPIC -std=gnu++20
+  INCLUDES = -I/home/littlechai/University/XDU-Compilers--Principles/headers -I/usr/local/include/opencv4
+  OBJECT_DIR = CMakeFiles/allLib.dir
+  OBJECT_FILE_DIR = CMakeFiles/allLib.dir/ExceptionLog
 
 
 # =============================================================================
-# Link build statements for SHARED_LIBRARY target Scanner_lib
+# Link build statements for SHARED_LIBRARY target allLib
 
 
 #############################################
-# Link the shared library libScanner_lib.so
+# Link the shared library liballLib.so
 
-build libScanner_lib.so: CXX_SHARED_LIBRARY_LINKER__Scanner_lib_Debug CMakeFiles/Scanner_lib.dir/Scanner/Scanner.cpp.o CMakeFiles/Scanner_lib.dir/Scanner/Token.cpp.o
+build liballLib.so: CXX_SHARED_LIBRARY_LINKER__allLib_Debug CMakeFiles/allLib.dir/Scanner/Scanner.cpp.o CMakeFiles/allLib.dir/Scanner/Token.cpp.o CMakeFiles/allLib.dir/Parser/Parser.cpp.o CMakeFiles/allLib.dir/Semantic/Semantic.cpp.o CMakeFiles/allLib.dir/Semantic/Plotter.cpp.o CMakeFiles/allLib.dir/Semantic/Point.cpp.o CMakeFiles/allLib.dir/ExceptionLog/ExceptionLog.cpp.o
   LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = CMakeFiles/Scanner_lib.dir
+  OBJECT_DIR = CMakeFiles/allLib.dir
   POST_BUILD = :
   PRE_LINK = :
-  SONAME = libScanner_lib.so
+  SONAME = liballLib.so
   SONAME_FLAG = -Wl,-soname,
-  TARGET_FILE = libScanner_lib.so
-  TARGET_PDB = Scanner_lib.so.dbg
-
-# =============================================================================
-# Object build statements for SHARED_LIBRARY target Parser_lib
-
-
-#############################################
-# Order-only phony target for Parser_lib
-
-build cmake_object_order_depends_target_Parser_lib: phony || CMakeFiles/Parser_lib.dir
-
-build CMakeFiles/Parser_lib.dir/Parser/Parser.cpp.o: CXX_COMPILER__Parser_lib_Debug /home/littlechai/University/XDU-Compilers--Principles/Parser/Parser.cpp || cmake_object_order_depends_target_Parser_lib
-  DEFINES = -DParser_lib_EXPORTS
-  DEP_FILE = CMakeFiles/Parser_lib.dir/Parser/Parser.cpp.o.d
-  FLAGS = -g -fPIC -std=gnu++20
-  INCLUDES = -I/home/littlechai/University/XDU-Compilers--Principles/headers
-  OBJECT_DIR = CMakeFiles/Parser_lib.dir
-  OBJECT_FILE_DIR = CMakeFiles/Parser_lib.dir/Parser
-
-
-# =============================================================================
-# Link build statements for SHARED_LIBRARY target Parser_lib
-
-
-#############################################
-# Link the shared library libParser_lib.so
-
-build libParser_lib.so: CXX_SHARED_LIBRARY_LINKER__Parser_lib_Debug CMakeFiles/Parser_lib.dir/Parser/Parser.cpp.o
-  LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = CMakeFiles/Parser_lib.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  SONAME = libParser_lib.so
-  SONAME_FLAG = -Wl,-soname,
-  TARGET_FILE = libParser_lib.so
-  TARGET_PDB = Parser_lib.so.dbg
-
-# =============================================================================
-# Object build statements for SHARED_LIBRARY target Semantic_lib
-
-
-#############################################
-# Order-only phony target for Semantic_lib
-
-build cmake_object_order_depends_target_Semantic_lib: phony || CMakeFiles/Semantic_lib.dir
-
-build CMakeFiles/Semantic_lib.dir/Semantic/Semantic.cpp.o: CXX_COMPILER__Semantic_lib_Debug /home/littlechai/University/XDU-Compilers--Principles/Semantic/Semantic.cpp || cmake_object_order_depends_target_Semantic_lib
-  DEFINES = -DSemantic_lib_EXPORTS
-  DEP_FILE = CMakeFiles/Semantic_lib.dir/Semantic/Semantic.cpp.o.d
-  FLAGS = -g -fPIC -std=gnu++20
-  INCLUDES = -I/home/littlechai/University/XDU-Compilers--Principles/headers
-  OBJECT_DIR = CMakeFiles/Semantic_lib.dir
-  OBJECT_FILE_DIR = CMakeFiles/Semantic_lib.dir/Semantic
-
-build CMakeFiles/Semantic_lib.dir/Semantic/Plotter.cpp.o: CXX_COMPILER__Semantic_lib_Debug /home/littlechai/University/XDU-Compilers--Principles/Semantic/Plotter.cpp || cmake_object_order_depends_target_Semantic_lib
-  DEFINES = -DSemantic_lib_EXPORTS
-  DEP_FILE = CMakeFiles/Semantic_lib.dir/Semantic/Plotter.cpp.o.d
-  FLAGS = -g -fPIC -std=gnu++20
-  INCLUDES = -I/home/littlechai/University/XDU-Compilers--Principles/headers
-  OBJECT_DIR = CMakeFiles/Semantic_lib.dir
-  OBJECT_FILE_DIR = CMakeFiles/Semantic_lib.dir/Semantic
-
-build CMakeFiles/Semantic_lib.dir/Semantic/Point.cpp.o: CXX_COMPILER__Semantic_lib_Debug /home/littlechai/University/XDU-Compilers--Principles/Semantic/Point.cpp || cmake_object_order_depends_target_Semantic_lib
-  DEFINES = -DSemantic_lib_EXPORTS
-  DEP_FILE = CMakeFiles/Semantic_lib.dir/Semantic/Point.cpp.o.d
-  FLAGS = -g -fPIC -std=gnu++20
-  INCLUDES = -I/home/littlechai/University/XDU-Compilers--Principles/headers
-  OBJECT_DIR = CMakeFiles/Semantic_lib.dir
-  OBJECT_FILE_DIR = CMakeFiles/Semantic_lib.dir/Semantic
-
-
-# =============================================================================
-# Link build statements for SHARED_LIBRARY target Semantic_lib
-
-
-#############################################
-# Link the shared library libSemantic_lib.so
-
-build libSemantic_lib.so: CXX_SHARED_LIBRARY_LINKER__Semantic_lib_Debug CMakeFiles/Semantic_lib.dir/Semantic/Semantic.cpp.o CMakeFiles/Semantic_lib.dir/Semantic/Plotter.cpp.o CMakeFiles/Semantic_lib.dir/Semantic/Point.cpp.o
-  LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = CMakeFiles/Semantic_lib.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  SONAME = libSemantic_lib.so
-  SONAME_FLAG = -Wl,-soname,
-  TARGET_FILE = libSemantic_lib.so
-  TARGET_PDB = Semantic_lib.so.dbg
-
-# =============================================================================
-# Object build statements for SHARED_LIBRARY target ExceptionLog_lib
-
-
-#############################################
-# Order-only phony target for ExceptionLog_lib
-
-build cmake_object_order_depends_target_ExceptionLog_lib: phony || CMakeFiles/ExceptionLog_lib.dir
-
-build CMakeFiles/ExceptionLog_lib.dir/ExceptionLog/ExceptionLog.cpp.o: CXX_COMPILER__ExceptionLog_lib_Debug /home/littlechai/University/XDU-Compilers--Principles/ExceptionLog/ExceptionLog.cpp || cmake_object_order_depends_target_ExceptionLog_lib
-  DEFINES = -DExceptionLog_lib_EXPORTS
-  DEP_FILE = CMakeFiles/ExceptionLog_lib.dir/ExceptionLog/ExceptionLog.cpp.o.d
-  FLAGS = -g -fPIC -std=gnu++20
-  INCLUDES = -I/home/littlechai/University/XDU-Compilers--Principles/headers
-  OBJECT_DIR = CMakeFiles/ExceptionLog_lib.dir
-  OBJECT_FILE_DIR = CMakeFiles/ExceptionLog_lib.dir/ExceptionLog
-
-
-# =============================================================================
-# Link build statements for SHARED_LIBRARY target ExceptionLog_lib
-
-
-#############################################
-# Link the shared library libExceptionLog_lib.so
-
-build libExceptionLog_lib.so: CXX_SHARED_LIBRARY_LINKER__ExceptionLog_lib_Debug CMakeFiles/ExceptionLog_lib.dir/ExceptionLog/ExceptionLog.cpp.o
-  LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = CMakeFiles/ExceptionLog_lib.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  SONAME = libExceptionLog_lib.so
-  SONAME_FLAG = -Wl,-soname,
-  TARGET_FILE = libExceptionLog_lib.so
-  TARGET_PDB = ExceptionLog_lib.so.dbg
+  TARGET_FILE = liballLib.so
+  TARGET_PDB = allLib.so.dbg
 
 
 #############################################
@@ -659,19 +579,13 @@ build Semantic/install/strip: phony Semantic/CMakeFiles/install/strip.util
 # =============================================================================
 # Target aliases.
 
-build ExceptionLog_lib: phony libExceptionLog_lib.so
-
 build Parser: phony Parser/Parser
-
-build Parser_lib: phony libParser_lib.so
 
 build Scanner: phony Scanner/Scanner
 
-build Scanner_lib: phony libScanner_lib.so
-
 build Semantic: phony Semantic/Semantic
 
-build Semantic_lib: phony libSemantic_lib.so
+build allLib: phony liballLib.so
 
 # =============================================================================
 # Folder targets.
@@ -681,7 +595,7 @@ build Semantic_lib: phony libSemantic_lib.so
 #############################################
 # Folder: /home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug
 
-build all: phony Plotter_interpreter libScanner_lib.so libParser_lib.so libSemantic_lib.so libExceptionLog_lib.so Scanner/all Parser/all Semantic/all
+build all: phony Plotter_interpreter liballLib.so Scanner/all Parser/all Semantic/all
 
 # =============================================================================
 
