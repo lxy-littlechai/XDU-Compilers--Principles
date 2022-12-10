@@ -30,7 +30,9 @@ Token Parser::fetchToken() {
 //    std::cout << token.token << std::endl;
     try  {
         if(token.tokenType == TokenType::ERR_TOKEN) {
-            throw ExceptionLog(scanner.row, scanner.column, "Error in tokenType when fetchToken");
+            std::string errMsg = "Error in tokenType when fetchToken\n"
+                            + token.token + "is ERR_TOKEN";
+            throw ExceptionLog(scanner.row, scanner.column, errMsg);
         }
     } catch (ExceptionLog &e) {
         e.log();
@@ -41,7 +43,9 @@ Token Parser::fetchToken() {
 void Parser::matchToken(TokenType tokenType) {
     try {
         if(token.tokenType != tokenType) {
-            throw ExceptionLog(scanner.row, scanner.column, "Error in match tokenType when matchToken");
+            std::string errMsg = "Error in tokenType when matchToken\n"
+                                 "now token is "+ token.token + "\n";
+            throw ExceptionLog(scanner.row, scanner.column, errMsg);
         }
         token = fetchToken();
     } catch (ExceptionLog& e) {
@@ -216,7 +220,7 @@ std::shared_ptr<TreeNode> Parser::Atom() {
                 break;
             }
             default: {
-                throw ExceptionLog(scanner.row, scanner.column, "Error in match Sentence");
+
                 break;
             }
         }
