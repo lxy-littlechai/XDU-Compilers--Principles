@@ -194,7 +194,7 @@ std::shared_ptr<TreeNode> Parser::Component() {
     return left;
 }
 
-// Atom -> CONST_ID | T | FUNC L_BRACKET expression R_BRACKET
+// Atom -> CONST_ID | T | FUNC L_BRACKET expression R_BRACKET | L_BRACKET expression R_BRACKET
 std::shared_ptr<TreeNode> Parser::Atom() {
     auto t = token;
     auto node = std::make_shared<TreeNode>();
@@ -213,6 +213,13 @@ std::shared_ptr<TreeNode> Parser::Atom() {
             }
             case TokenType::FUNC: {
                 matchToken(TokenType::FUNC);
+                matchToken(TokenType::L_BRACKET);
+                auto tmp = expression();
+                node = buildTreeNode(TokenType::FUNC, t.func, tmp);
+                matchToken(TokenType::R_BRACKET);
+                break;
+            }
+            case TokenType::L_BRACKET: {
                 matchToken(TokenType::L_BRACKET);
                 auto tmp = expression();
                 node = buildTreeNode(TokenType::FUNC, t.func, tmp);
