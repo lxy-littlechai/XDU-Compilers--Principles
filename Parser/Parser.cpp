@@ -133,12 +133,16 @@ std::shared_ptr<TreeNode> Parser::expression() {
 
     left = Term();
     while(token.tokenType == TokenType::PLUS || token.tokenType == TokenType::MINUS) {
-        TokenType token_tmp = token.tokenType;
+        Token token_tmp = token;
         matchToken(token.tokenType);
         right = Term();
 
-        left = buildTreeNode(token_tmp, left, right);
+        left = buildTreeNode(token_tmp.tokenType, token_tmp.token, left, right);
     }
+    std::cout << "-------- SyntaxTree ---------" << std::endl;
+    outputExpression(left);
+    outputDebugMsg("\n");
+    outputSyntaxTree(left, 0);
     return left;
 }
 
@@ -149,11 +153,11 @@ std::shared_ptr<TreeNode> Parser::Term() {
 
     left = Factor();
     while (token.tokenType == TokenType::MUL || token.tokenType == TokenType::DIV) {
-        TokenType token_tmp = token.tokenType;
+        Token token_tmp = token;
         matchToken(token.tokenType);
         right = Factor();
 
-        left = buildTreeNode(token_tmp, left, right);
+        left = buildTreeNode(token_tmp.tokenType, token_tmp.token, left, right);
     }
     return left;
 }
@@ -172,7 +176,7 @@ std::shared_ptr<TreeNode> Parser::Factor() {
         left->tokenType = TokenType::CONST_ID;
         left->constValue = 0;
         right = Factor();
-        right = buildTreeNode(TokenType::MINUS, left, right);
+        right = buildTreeNode(TokenType::MINUS, "-", left, right);
     }
     else {
         right = Component();
@@ -189,7 +193,7 @@ std::shared_ptr<TreeNode> Parser::Component() {
     if(token.tokenType == TokenType::POWER) {
         matchToken(TokenType::POWER);
         right = Component();
-        left = buildTreeNode(TokenType::POWER, left, right);
+        left = buildTreeNode(TokenType::POWER, "**", left, right);
     }
     return left;
 }
@@ -203,26 +207,26 @@ std::shared_ptr<TreeNode> Parser::Atom() {
         switch (token.tokenType) {
             case TokenType::CONST_ID: {
                 matchToken(TokenType::CONST_ID);
-                node = buildTreeNode(TokenType::CONST_ID, t.value);
+                node = buildTreeNode(TokenType::CONST_ID, t.token, t.value);
                 break;
             }
             case TokenType::T: {
                 matchToken(TokenType::T);
-                node = buildTreeNode(TokenType::T, t.value);
+                node = buildTreeNode(TokenType::T, t.token, t.value);
                 break;
             }
             case TokenType::FUNC: {
                 matchToken(TokenType::FUNC);
                 matchToken(TokenType::L_BRACKET);
                 auto tmp = expression();
-                node = buildTreeNode(TokenType::FUNC, t.func, tmp);
+                node = buildTreeNode(TokenType::FUNC, t.token, t.func, tmp);
                 matchToken(TokenType::R_BRACKET);
                 break;
             }
             case TokenType::L_BRACKET: {
                 matchToken(TokenType::L_BRACKET);
                 auto tmp = expression();
-                node = buildTreeNode(TokenType::FUNC, t.func, tmp);
+                node = buildTreeNode(TokenType::FUNC, t.token, t.func, tmp);
                 matchToken(TokenType::R_BRACKET);
                 break;
             }
@@ -239,18 +243,19 @@ std::shared_ptr<TreeNode> Parser::Atom() {
 
 
 std::shared_ptr<TreeNode>
-Parser::buildTreeNode(TokenType tokenType, std::shared_ptr<TreeNode> left, std::shared_ptr<TreeNode> right) {
+Parser::buildTreeNode(TokenType tokenType, std::string token, std::shared_ptr<TreeNode> left, std::shared_ptr<TreeNode> right) {
     auto node = std::make_shared<TreeNode>();
     node->tokenType = tokenType;
+    node->token = token;
     node->operatorNode.Lchild = left;
     node->operatorNode.Rchild = right;
     return node;
 }
 
-std::shared_ptr<TreeNode> Parser::buildTreeNode(TokenType tokenType, double value) {
+std::shared_ptr<TreeNode> Parser::buildTreeNode(TokenType tokenType, std::string token, double value) {
     auto node = std::make_shared<TreeNode>();
     node->tokenType = tokenType;
-
+    node->token = token;
     if(tokenType == TokenType::CONST_ID) {
         node->constValue = value;
     }
@@ -260,9 +265,10 @@ std::shared_ptr<TreeNode> Parser::buildTreeNode(TokenType tokenType, double valu
     return node;
 }
 
-std::shared_ptr<TreeNode> Parser::buildTreeNode(TokenType tokenType, std::shared_ptr<Func> func, std::shared_ptr<TreeNode> t) {
+std::shared_ptr<TreeNode> Parser::buildTreeNode(TokenType tokenType, std::string token, std::shared_ptr<Func> func, std::shared_ptr<TreeNode> t) {
     auto node = std::make_shared<TreeNode>();
     node->tokenType = tokenType;
+    node->token = token;
     node->funcNode.func = func;
     node->funcNode.child = t;
     return node;
@@ -272,49 +278,76 @@ void Parser::outputDebugMsg(std::string msg) {
     std::cout << msg << std::endl;
 }
 
-void Parser::outputSyntaxTree(std::shared_ptr<TreeNode> root, int height) {
-    for(int i = 1;i <= height;i ++) {
-        std::cout << " ";
-    }
-    switch (root->tokenType){
-        case PLUS: {
-            std::cout << "+" <<std::endl;
+void Parser::outputExpression(const std::shared_ptr<TreeNode> &root) {
+    switch (root->tokenType) {
+        case TokenType::PLUS: {
+            outputExpression(root->operatorNode.Lchild);
+            std::cout << root->token;
+            outputExpression(root->operatorNode.Rchild);
             break;
         }
-        case MINUS: {
-            std::cout << "-" <<std::endl;
+        case TokenType::MINUS: {
+            outputExpression(root->operatorNode.Lchild);
+            std::cout << root->token;
+            outputExpression(root->operatorNode.Rchild);
             break;
         }
-
-        case MUL: {
-            std::cout << "*" <<std::endl;
+        case TokenType::MUL: {
+            outputExpression(root->operatorNode.Lchild);
+            std::cout << root->token;
+            outputExpression(root->operatorNode.Rchild);
             break;
         }
-        case DIV: {
-            std::cout << "/" <<std::endl;
+        case TokenType::DIV: {
+            outputExpression(root->operatorNode.Lchild);
+            std::cout << root->token;
+            outputExpression(root->operatorNode.Rchild);
             break;
         }
-        case POWER: {
-            std::cout << "**" <<std::endl;
+        case TokenType::POWER: {
+            outputExpression(root->operatorNode.Lchild);
+            std::cout << root->token;
+            outputExpression(root->operatorNode.Rchild);
             break;
         }
-        case FUNC: {
-            std::cout << "func" <<std::endl;
+        case TokenType::FUNC: {
+            std::cout << root->token << "(";
+            outputExpression(root->funcNode.child);
+            std::cout << ")";
             break;
         }
-        case CONST_ID: {
-            std::cout << root->constValue <<std::endl;
+        case TokenType::CONST_ID: {
+            std::cout << root->token;
             break;
         }
-        case T: {
-            std::cout << "T" <<std::endl;
+        case TokenType::T: {
+            std::cout << root->token;
             break;
         }
         default: {
-            std::cout << "#" <<std::endl;
             break;
         }
+    }
 
+}
+
+void Parser::outputSyntaxTree(const std::shared_ptr<TreeNode> &root, int height) {
+
+
+    for(int i = 1;i <= height;i ++) {
+        std::cout << "   ";
+    }
+    std::cout << root->token << std::endl;
+
+    if(root->tokenType == TokenType::CONST_ID || root->tokenType == TokenType::T) {
+        return;
+    }
+    else if(root->tokenType == TokenType::FUNC) {
+        outputSyntaxTree(root->funcNode.child, height+1);
+    }
+    else {
+        outputSyntaxTree(root->operatorNode.Lchild, height+1);
+        outputSyntaxTree(root->operatorNode.Rchild, height+1);
     }
 
 }

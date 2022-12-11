@@ -102,6 +102,10 @@ Plotter_interpreter: /usr/local/lib/libopencv_video.so.4.6.0
 Plotter_interpreter: /usr/local/lib/libopencv_videoio.so.4.6.0
 Plotter_interpreter: ../lib/liballLib.so
 Plotter_interpreter: ../lib/libopencv_highgui.so
+Plotter_interpreter: ../lib/libExceptionLog_lib.so
+Plotter_interpreter: ../lib/libScanner_lib.so
+Plotter_interpreter: ../lib/libParser_lib.so
+Plotter_interpreter: ../lib/libSemantic_lib.so
 Plotter_interpreter: /usr/local/lib/libopencv_imgcodecs.so.4.6.0
 Plotter_interpreter: /usr/local/lib/libopencv_dnn.so.4.6.0
 Plotter_interpreter: /usr/local/lib/libopencv_calib3d.so.4.6.0

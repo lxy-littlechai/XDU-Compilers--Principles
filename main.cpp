@@ -2,7 +2,7 @@
 #include "Semantic/Semantic.h"
 
 int main() {
-    std::string fileName = "/home/littlechai/University/XDU-Compilers--Principles/test.txt";
+    std::string fileName = "/home/littlechai/University/XDU-Compilers--Principles/circle.txt";
     Semantic semantic;
     semantic.init_Semantic(fileName);
     semantic.start_Semantic();

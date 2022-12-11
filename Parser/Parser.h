@@ -20,7 +20,8 @@ public:
     void init_Parser(std::string filename);
     void start_Parser();
     void close_Parser();
-    void outputSyntaxTree(std::shared_ptr<TreeNode> root, int height);
+    void outputExpression(const std::shared_ptr<TreeNode> &root);
+    void outputSyntaxTree(const std::shared_ptr<TreeNode> &root, int height);
 
 protected:
     /** main function to match specific sentence **/
@@ -54,12 +55,13 @@ private:
     std::shared_ptr<TreeNode>  Atom();
 
     /** build TreeNode **/
-    std::shared_ptr<TreeNode> buildTreeNode(TokenType tokenType, std::shared_ptr<TreeNode> left, std::shared_ptr<TreeNode> right);
-    std::shared_ptr<TreeNode> buildTreeNode(TokenType tokenType, double  value);
-    std::shared_ptr<TreeNode> buildTreeNode(TokenType tokenType, std::shared_ptr<Func> func, std::shared_ptr<TreeNode> node);
+    std::shared_ptr<TreeNode> buildTreeNode(TokenType tokenType, std::string token, std::shared_ptr<TreeNode> left, std::shared_ptr<TreeNode> right);
+    std::shared_ptr<TreeNode> buildTreeNode(TokenType tokenType, std::string token, double  value);
+    std::shared_ptr<TreeNode> buildTreeNode(TokenType tokenType, std::string token, std::shared_ptr<Func> func, std::shared_ptr<TreeNode> node);
 
     /** output debug message **/
     void outputDebugMsg(std::string msg);
+
 
     Scanner scanner;
     Token token;

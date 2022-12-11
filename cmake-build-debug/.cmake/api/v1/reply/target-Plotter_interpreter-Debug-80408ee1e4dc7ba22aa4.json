@@ -48,6 +48,12 @@
 				"parent" : 0
 			},
 			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 51,
+				"parent" : 0
+			},
+			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 11,
@@ -76,11 +82,11 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 5,
+					"backtrace" : 6,
 					"path" : "/home/littlechai/University/XDU-Compilers--Principles/headers"
 				},
 				{
-					"backtrace" : 6,
+					"backtrace" : 7,
 					"isSystem" : true,
 					"path" : "/usr/local/include/opencv4"
 				}
@@ -165,6 +171,26 @@
 			{
 				"backtrace" : 4,
 				"fragment" : "../lib/libopencv_highgui.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "../lib/libExceptionLog_lib.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "../lib/libScanner_lib.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "../lib/libParser_lib.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "../lib/libSemantic_lib.so",
 				"role" : "libraries"
 			},
 			{

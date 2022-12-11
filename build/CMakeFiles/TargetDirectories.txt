@@ -1,5 +1,9 @@
 /home/littlechai/University/XDU-Compilers--Principles/build/CMakeFiles/Plotter_interpreter.dir
 /home/littlechai/University/XDU-Compilers--Principles/build/CMakeFiles/allLib.dir
+/home/littlechai/University/XDU-Compilers--Principles/build/CMakeFiles/Scanner_lib.dir
+/home/littlechai/University/XDU-Compilers--Principles/build/CMakeFiles/Parser_lib.dir
+/home/littlechai/University/XDU-Compilers--Principles/build/CMakeFiles/Semantic_lib.dir
+/home/littlechai/University/XDU-Compilers--Principles/build/CMakeFiles/ExceptionLog_lib.dir
 /home/littlechai/University/XDU-Compilers--Principles/build/CMakeFiles/edit_cache.dir
 /home/littlechai/University/XDU-Compilers--Principles/build/CMakeFiles/rebuild_cache.dir
 /home/littlechai/University/XDU-Compilers--Principles/build/CMakeFiles/list_install_components.dir

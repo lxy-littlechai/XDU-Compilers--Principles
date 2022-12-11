@@ -2,7 +2,7 @@
 #include "Parser.h"
 
 int main() {
-    std::string fileName = "/home/littlechai/University/XDU-Compilers--Principles/test.txt";
+    std::string fileName = "/home/littlechai/University/XDU-Compilers--Principles/circle.txt";
     Parser parser;
     parser.init_Parser(fileName);
     parser.start_Parser();

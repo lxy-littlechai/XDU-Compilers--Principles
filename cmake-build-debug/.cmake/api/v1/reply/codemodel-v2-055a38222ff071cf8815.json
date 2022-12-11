@@ -13,7 +13,7 @@
 						3
 					],
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-b522892d1acc4b675c41.json",
+					"jsonFile" : "directory-.-Debug-882c6075dcfcf83ba995.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.21"
@@ -22,8 +22,12 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						1,
-						4
+						0,
+						2,
+						3,
+						5,
+						7,
+						8
 					]
 				},
 				{
@@ -38,7 +42,7 @@
 					"source" : "Scanner",
 					"targetIndexes" : 
 					[
-						2
+						4
 					]
 				},
 				{
@@ -53,7 +57,7 @@
 					"source" : "Parser",
 					"targetIndexes" : 
 					[
-						0
+						1
 					]
 				},
 				{
@@ -68,7 +72,7 @@
 					"source" : "Semantic",
 					"targetIndexes" : 
 					[
-						3
+						6
 					]
 				}
 			],
@@ -89,8 +93,12 @@
 					"name" : "Plotter_interpreter",
 					"targetIndexes" : 
 					[
-						1,
-						4
+						0,
+						2,
+						3,
+						5,
+						7,
+						8
 					]
 				},
 				{
@@ -102,7 +110,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						2
+						4
 					]
 				},
 				{
@@ -114,7 +122,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						0
+						1
 					]
 				},
 				{
@@ -126,12 +134,19 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						3
+						6
 					]
 				}
 			],
 			"targets" : 
 			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ExceptionLog_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ExceptionLog_lib-Debug-9c7f167a226a12dcfff0.json",
+					"name" : "ExceptionLog_lib",
+					"projectIndex" : 0
+				},
 				{
 					"directoryIndex" : 2,
 					"id" : "Parser::@74bff9814a543eacbe93",
@@ -141,8 +156,15 @@
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "Parser_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Parser_lib-Debug-ded248d478b91ff0d210.json",
+					"name" : "Parser_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "Plotter_interpreter::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Plotter_interpreter-Debug-90e0e8f286c8d9a68577.json",
+					"jsonFile" : "target-Plotter_interpreter-Debug-80408ee1e4dc7ba22aa4.json",
 					"name" : "Plotter_interpreter",
 					"projectIndex" : 0
 				},
@@ -154,11 +176,25 @@
 					"projectIndex" : 1
 				},
 				{
+					"directoryIndex" : 0,
+					"id" : "Scanner_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Scanner_lib-Debug-68721e6005d50828dcc7.json",
+					"name" : "Scanner_lib",
+					"projectIndex" : 0
+				},
+				{
 					"directoryIndex" : 3,
 					"id" : "Semantic::@83053809dc2ab0aad623",
 					"jsonFile" : "target-Semantic-Debug-d08852ae1573fe691fd1.json",
 					"name" : "Semantic",
 					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Semantic_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Semantic_lib-Debug-a33c3782ac93da97326f.json",
+					"name" : "Semantic_lib",
+					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,

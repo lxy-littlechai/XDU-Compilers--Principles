@@ -6,6 +6,7 @@
 #define PLOTTER_INTERPRETER_TREENODE_H
 
 #include <memory>
+#include <string>
 #include "Token.h"
 #include "Func.h"
 
@@ -14,6 +15,7 @@ public:
     TokenType tokenType;
     double constValue;
     double* var;
+    std::string token;
     struct FuncNode {
         std::shared_ptr<TreeNode> child;
         std::shared_ptr<Func> func;

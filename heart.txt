@@ -1,0 +1,4 @@
+-- heart
+scale is (50,50);
+for t from -pi to pi step pi/200
+draw(2*cos(t) - cos(2*t), 2*sin(t) - sin(2*t));

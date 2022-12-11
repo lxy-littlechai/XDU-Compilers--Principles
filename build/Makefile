@@ -188,6 +188,58 @@ allLib/fast:
 .PHONY : allLib/fast
 
 #=============================================================================
+# Target rules for targets named Scanner_lib
+
+# Build rule for target.
+Scanner_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Scanner_lib
+.PHONY : Scanner_lib
+
+# fast build rule for target.
+Scanner_lib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scanner_lib.dir/build.make CMakeFiles/Scanner_lib.dir/build
+.PHONY : Scanner_lib/fast
+
+#=============================================================================
+# Target rules for targets named Parser_lib
+
+# Build rule for target.
+Parser_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Parser_lib
+.PHONY : Parser_lib
+
+# fast build rule for target.
+Parser_lib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Parser_lib.dir/build.make CMakeFiles/Parser_lib.dir/build
+.PHONY : Parser_lib/fast
+
+#=============================================================================
+# Target rules for targets named Semantic_lib
+
+# Build rule for target.
+Semantic_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Semantic_lib
+.PHONY : Semantic_lib
+
+# fast build rule for target.
+Semantic_lib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Semantic_lib.dir/build.make CMakeFiles/Semantic_lib.dir/build
+.PHONY : Semantic_lib/fast
+
+#=============================================================================
+# Target rules for targets named ExceptionLog_lib
+
+# Build rule for target.
+ExceptionLog_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExceptionLog_lib
+.PHONY : ExceptionLog_lib
+
+# fast build rule for target.
+ExceptionLog_lib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExceptionLog_lib.dir/build.make CMakeFiles/ExceptionLog_lib.dir/build
+.PHONY : ExceptionLog_lib/fast
+
+#=============================================================================
 # Target rules for targets named Scanner
 
 # Build rule for target.
@@ -232,6 +284,7 @@ ExceptionLog/ExceptionLog.o: ExceptionLog/ExceptionLog.cpp.o
 # target to build an object file
 ExceptionLog/ExceptionLog.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/allLib.dir/build.make CMakeFiles/allLib.dir/ExceptionLog/ExceptionLog.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExceptionLog_lib.dir/build.make CMakeFiles/ExceptionLog_lib.dir/ExceptionLog/ExceptionLog.cpp.o
 .PHONY : ExceptionLog/ExceptionLog.cpp.o
 
 ExceptionLog/ExceptionLog.i: ExceptionLog/ExceptionLog.cpp.i
@@ -240,6 +293,7 @@ ExceptionLog/ExceptionLog.i: ExceptionLog/ExceptionLog.cpp.i
 # target to preprocess a source file
 ExceptionLog/ExceptionLog.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/allLib.dir/build.make CMakeFiles/allLib.dir/ExceptionLog/ExceptionLog.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExceptionLog_lib.dir/build.make CMakeFiles/ExceptionLog_lib.dir/ExceptionLog/ExceptionLog.cpp.i
 .PHONY : ExceptionLog/ExceptionLog.cpp.i
 
 ExceptionLog/ExceptionLog.s: ExceptionLog/ExceptionLog.cpp.s
@@ -248,6 +302,7 @@ ExceptionLog/ExceptionLog.s: ExceptionLog/ExceptionLog.cpp.s
 # target to generate assembly for a file
 ExceptionLog/ExceptionLog.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/allLib.dir/build.make CMakeFiles/allLib.dir/ExceptionLog/ExceptionLog.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExceptionLog_lib.dir/build.make CMakeFiles/ExceptionLog_lib.dir/ExceptionLog/ExceptionLog.cpp.s
 .PHONY : ExceptionLog/ExceptionLog.cpp.s
 
 Parser/Parser.o: Parser/Parser.cpp.o
@@ -256,6 +311,7 @@ Parser/Parser.o: Parser/Parser.cpp.o
 # target to build an object file
 Parser/Parser.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/allLib.dir/build.make CMakeFiles/allLib.dir/Parser/Parser.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Parser_lib.dir/build.make CMakeFiles/Parser_lib.dir/Parser/Parser.cpp.o
 .PHONY : Parser/Parser.cpp.o
 
 Parser/Parser.i: Parser/Parser.cpp.i
@@ -264,6 +320,7 @@ Parser/Parser.i: Parser/Parser.cpp.i
 # target to preprocess a source file
 Parser/Parser.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/allLib.dir/build.make CMakeFiles/allLib.dir/Parser/Parser.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Parser_lib.dir/build.make CMakeFiles/Parser_lib.dir/Parser/Parser.cpp.i
 .PHONY : Parser/Parser.cpp.i
 
 Parser/Parser.s: Parser/Parser.cpp.s
@@ -272,6 +329,7 @@ Parser/Parser.s: Parser/Parser.cpp.s
 # target to generate assembly for a file
 Parser/Parser.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/allLib.dir/build.make CMakeFiles/allLib.dir/Parser/Parser.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Parser_lib.dir/build.make CMakeFiles/Parser_lib.dir/Parser/Parser.cpp.s
 .PHONY : Parser/Parser.cpp.s
 
 Scanner/Scanner.o: Scanner/Scanner.cpp.o
@@ -280,6 +338,7 @@ Scanner/Scanner.o: Scanner/Scanner.cpp.o
 # target to build an object file
 Scanner/Scanner.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/allLib.dir/build.make CMakeFiles/allLib.dir/Scanner/Scanner.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scanner_lib.dir/build.make CMakeFiles/Scanner_lib.dir/Scanner/Scanner.cpp.o
 .PHONY : Scanner/Scanner.cpp.o
 
 Scanner/Scanner.i: Scanner/Scanner.cpp.i
@@ -288,6 +347,7 @@ Scanner/Scanner.i: Scanner/Scanner.cpp.i
 # target to preprocess a source file
 Scanner/Scanner.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/allLib.dir/build.make CMakeFiles/allLib.dir/Scanner/Scanner.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scanner_lib.dir/build.make CMakeFiles/Scanner_lib.dir/Scanner/Scanner.cpp.i
 .PHONY : Scanner/Scanner.cpp.i
 
 Scanner/Scanner.s: Scanner/Scanner.cpp.s
@@ -296,6 +356,7 @@ Scanner/Scanner.s: Scanner/Scanner.cpp.s
 # target to generate assembly for a file
 Scanner/Scanner.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/allLib.dir/build.make CMakeFiles/allLib.dir/Scanner/Scanner.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scanner_lib.dir/build.make CMakeFiles/Scanner_lib.dir/Scanner/Scanner.cpp.s
 .PHONY : Scanner/Scanner.cpp.s
 
 Scanner/Token.o: Scanner/Token.cpp.o
@@ -304,6 +365,7 @@ Scanner/Token.o: Scanner/Token.cpp.o
 # target to build an object file
 Scanner/Token.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/allLib.dir/build.make CMakeFiles/allLib.dir/Scanner/Token.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scanner_lib.dir/build.make CMakeFiles/Scanner_lib.dir/Scanner/Token.cpp.o
 .PHONY : Scanner/Token.cpp.o
 
 Scanner/Token.i: Scanner/Token.cpp.i
@@ -312,6 +374,7 @@ Scanner/Token.i: Scanner/Token.cpp.i
 # target to preprocess a source file
 Scanner/Token.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/allLib.dir/build.make CMakeFiles/allLib.dir/Scanner/Token.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scanner_lib.dir/build.make CMakeFiles/Scanner_lib.dir/Scanner/Token.cpp.i
 .PHONY : Scanner/Token.cpp.i
 
 Scanner/Token.s: Scanner/Token.cpp.s
@@ -320,6 +383,7 @@ Scanner/Token.s: Scanner/Token.cpp.s
 # target to generate assembly for a file
 Scanner/Token.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/allLib.dir/build.make CMakeFiles/allLib.dir/Scanner/Token.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scanner_lib.dir/build.make CMakeFiles/Scanner_lib.dir/Scanner/Token.cpp.s
 .PHONY : Scanner/Token.cpp.s
 
 Semantic/Plotter.o: Semantic/Plotter.cpp.o
@@ -328,6 +392,7 @@ Semantic/Plotter.o: Semantic/Plotter.cpp.o
 # target to build an object file
 Semantic/Plotter.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/allLib.dir/build.make CMakeFiles/allLib.dir/Semantic/Plotter.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Semantic_lib.dir/build.make CMakeFiles/Semantic_lib.dir/Semantic/Plotter.cpp.o
 .PHONY : Semantic/Plotter.cpp.o
 
 Semantic/Plotter.i: Semantic/Plotter.cpp.i
@@ -336,6 +401,7 @@ Semantic/Plotter.i: Semantic/Plotter.cpp.i
 # target to preprocess a source file
 Semantic/Plotter.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/allLib.dir/build.make CMakeFiles/allLib.dir/Semantic/Plotter.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Semantic_lib.dir/build.make CMakeFiles/Semantic_lib.dir/Semantic/Plotter.cpp.i
 .PHONY : Semantic/Plotter.cpp.i
 
 Semantic/Plotter.s: Semantic/Plotter.cpp.s
@@ -344,6 +410,7 @@ Semantic/Plotter.s: Semantic/Plotter.cpp.s
 # target to generate assembly for a file
 Semantic/Plotter.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/allLib.dir/build.make CMakeFiles/allLib.dir/Semantic/Plotter.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Semantic_lib.dir/build.make CMakeFiles/Semantic_lib.dir/Semantic/Plotter.cpp.s
 .PHONY : Semantic/Plotter.cpp.s
 
 Semantic/Point.o: Semantic/Point.cpp.o
@@ -352,6 +419,7 @@ Semantic/Point.o: Semantic/Point.cpp.o
 # target to build an object file
 Semantic/Point.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/allLib.dir/build.make CMakeFiles/allLib.dir/Semantic/Point.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Semantic_lib.dir/build.make CMakeFiles/Semantic_lib.dir/Semantic/Point.cpp.o
 .PHONY : Semantic/Point.cpp.o
 
 Semantic/Point.i: Semantic/Point.cpp.i
@@ -360,6 +428,7 @@ Semantic/Point.i: Semantic/Point.cpp.i
 # target to preprocess a source file
 Semantic/Point.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/allLib.dir/build.make CMakeFiles/allLib.dir/Semantic/Point.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Semantic_lib.dir/build.make CMakeFiles/Semantic_lib.dir/Semantic/Point.cpp.i
 .PHONY : Semantic/Point.cpp.i
 
 Semantic/Point.s: Semantic/Point.cpp.s
@@ -368,6 +437,7 @@ Semantic/Point.s: Semantic/Point.cpp.s
 # target to generate assembly for a file
 Semantic/Point.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/allLib.dir/build.make CMakeFiles/allLib.dir/Semantic/Point.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Semantic_lib.dir/build.make CMakeFiles/Semantic_lib.dir/Semantic/Point.cpp.s
 .PHONY : Semantic/Point.cpp.s
 
 Semantic/Semantic.o: Semantic/Semantic.cpp.o
@@ -376,6 +446,7 @@ Semantic/Semantic.o: Semantic/Semantic.cpp.o
 # target to build an object file
 Semantic/Semantic.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/allLib.dir/build.make CMakeFiles/allLib.dir/Semantic/Semantic.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Semantic_lib.dir/build.make CMakeFiles/Semantic_lib.dir/Semantic/Semantic.cpp.o
 .PHONY : Semantic/Semantic.cpp.o
 
 Semantic/Semantic.i: Semantic/Semantic.cpp.i
@@ -384,6 +455,7 @@ Semantic/Semantic.i: Semantic/Semantic.cpp.i
 # target to preprocess a source file
 Semantic/Semantic.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/allLib.dir/build.make CMakeFiles/allLib.dir/Semantic/Semantic.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Semantic_lib.dir/build.make CMakeFiles/Semantic_lib.dir/Semantic/Semantic.cpp.i
 .PHONY : Semantic/Semantic.cpp.i
 
 Semantic/Semantic.s: Semantic/Semantic.cpp.s
@@ -392,6 +464,7 @@ Semantic/Semantic.s: Semantic/Semantic.cpp.s
 # target to generate assembly for a file
 Semantic/Semantic.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/allLib.dir/build.make CMakeFiles/allLib.dir/Semantic/Semantic.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Semantic_lib.dir/build.make CMakeFiles/Semantic_lib.dir/Semantic/Semantic.cpp.s
 .PHONY : Semantic/Semantic.cpp.s
 
 main.o: main.cpp.o
@@ -430,10 +503,14 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... ExceptionLog_lib"
 	@echo "... Parser"
+	@echo "... Parser_lib"
 	@echo "... Plotter_interpreter"
 	@echo "... Scanner"
+	@echo "... Scanner_lib"
 	@echo "... Semantic"
+	@echo "... Semantic_lib"
 	@echo "... allLib"
 	@echo "... ExceptionLog/ExceptionLog.o"
 	@echo "... ExceptionLog/ExceptionLog.i"

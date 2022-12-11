@@ -57,6 +57,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Plotter_interpreter.dir/DependInfo.cmake"
   "CMakeFiles/allLib.dir/DependInfo.cmake"
+  "CMakeFiles/Scanner_lib.dir/DependInfo.cmake"
+  "CMakeFiles/Parser_lib.dir/DependInfo.cmake"
+  "CMakeFiles/Semantic_lib.dir/DependInfo.cmake"
+  "CMakeFiles/ExceptionLog_lib.dir/DependInfo.cmake"
   "Scanner/CMakeFiles/Scanner.dir/DependInfo.cmake"
   "Parser/CMakeFiles/Parser.dir/DependInfo.cmake"
   "Semantic/CMakeFiles/Semantic.dir/DependInfo.cmake"
