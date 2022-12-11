@@ -4,7 +4,7 @@ project(Semantic)
 set(CMAKE_CXX_STANDARD 20)
 
 #dependencies
-find_package( OpenCV REQUIRED )
+#find_package( OpenCV REQUIRED )
 include_directories( ${OpenCV_INCLUDE_DIRS} )
 
 include_directories(${PROJECT_SOURCE_DIR}/../headers)

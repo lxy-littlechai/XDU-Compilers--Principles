@@ -7,6 +7,6 @@ int main() {
     parser.init_Parser(fileName);
     parser.start_Parser();
     parser.close_Parser();
-
+    system("pause");
     return 0;
 }

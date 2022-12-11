@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/Scanner.dir/main.cpp.o CMakeFiles/Scanner.dir/Token.cpp.o CMakeFiles/Scanner.dir/Scanner.cpp.o -o Scanner  -Wl,-rpath,/home/littlechai/University/XDU-Compilers--Principles/Scanner/../lib ../../Scanner/../lib/libExceptionLog_lib.so 

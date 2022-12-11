@@ -5,7 +5,7 @@
 #include <string>
 #include <iomanip>
 #include "Scanner.h"
-#include "ExceptionLog.h"
+#include "../headers/ExceptionLog.h"
 
 
 void Scanner::init_scanner(std::string fileName) {
