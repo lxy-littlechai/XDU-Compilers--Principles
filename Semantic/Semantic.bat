@@ -1,0 +1,1 @@
+g++ -o Semantic -std=c++11  ..\Parser\Parser.cpp ..\ExceptionLog\ExceptionLog.cpp ..\Scanner\Scanner.cpp ..\Scanner\Token.cpp Semantic.cpp Point.cpp Plotter.cpp

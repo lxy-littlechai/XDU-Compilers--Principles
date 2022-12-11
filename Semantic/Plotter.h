@@ -5,24 +5,20 @@
 #ifndef PLOTTER_INTERPRETER_PLOTTER_H
 #define PLOTTER_INTERPRETER_PLOTTER_H
 
+#include <iostream>
 #include <memory>
 #include "Point.h"
-#include <iostream>
-#include<opencv2/opencv.hpp>
-#include<opencv2/core/core.hpp>
-#include<opencv2/highgui/highgui.hpp>
-#include<opencv2/imgproc/imgproc.hpp>
 
 class Plotter {
-public:
-    static std::shared_ptr<Plotter> getInstance();
-    void draw(Point p);
-    void show();
+ public:
+  static std::shared_ptr<Plotter> getInstance();
+  void draw(Point p);
+  void show();
 
-private:
-    Plotter();
-    cv::Mat picture;
+ private:
+  Plotter();
+  HWND hwnd;
+  HDC hdc;
 };
 
-
-#endif //PLOTTER_INTERPRETER_PLOTTER_H
+#endif  // PLOTTER_INTERPRETER_PLOTTER_H

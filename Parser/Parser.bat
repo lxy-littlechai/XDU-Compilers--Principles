@@ -1,0 +1,1 @@
+g++ -o Parser -std=c++11 main.cpp Parser.cpp ..\ExceptionLog\ExceptionLog.cpp ..\Scanner\Scanner.cpp ..\Scanner\Token.cpp
