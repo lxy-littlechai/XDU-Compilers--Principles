@@ -1,4 +1,7 @@
 -- heart
+origin is (350,220);
+size is 5;
+color is (120, 254, 34);
 scale is (50,50);
 for t from -pi to pi step pi/200
 draw(2*cos(t) - cos(2*t), 2*sin(t) - sin(2*t));

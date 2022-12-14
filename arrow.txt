@@ -1,5 +1,6 @@
 -- arrow
-origin is (350,220);
+color is (250,50,67);
+size is 3;
 scale is (1,1);
 origin is (450,450);
 rot is pi;

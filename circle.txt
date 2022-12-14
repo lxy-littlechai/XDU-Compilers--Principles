@@ -1,6 +1,6 @@
 -- circle
 color is (255,255,0);
-size is 6;
+size is 1;
 origin is (350,220);
 scale is (50,50);
 for t from 0 to 2*pi step pi/100 draw(cos(t),sin(t));

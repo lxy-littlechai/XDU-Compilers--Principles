@@ -31,7 +31,7 @@ Token Parser::fetchToken() {
     try  {
         if(token.tokenType == TokenType::ERR_TOKEN) {
             std::string errMsg = "Error in tokenType when fetchToken\n"
-                            + token.token + "is ERR_TOKEN";
+                            + token.token + " is ERR_TOKEN";
             throw ExceptionLog(scanner.row, scanner.column, errMsg);
         }
     } catch (ExceptionLog &e) {
