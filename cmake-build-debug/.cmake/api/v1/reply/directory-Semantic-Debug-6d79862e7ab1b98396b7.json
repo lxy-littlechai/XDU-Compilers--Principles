@@ -1,0 +1,45 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"Semantic/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 17,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "/home/littlechai/University/XDU-Compilers--Principles/lib",
+			"paths" : 
+			[
+				"Semantic/libSemantic_lib.so"
+			],
+			"targetId" : "Semantic_lib::@83053809dc2ab0aad623",
+			"targetIndex" : 7,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "Semantic",
+		"source" : "Semantic"
+	}
+}

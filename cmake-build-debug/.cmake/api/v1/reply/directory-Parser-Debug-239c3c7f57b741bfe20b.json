@@ -1,0 +1,45 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"Parser/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 12,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "/home/littlechai/University/XDU-Compilers--Principles/lib",
+			"paths" : 
+			[
+				"Parser/libParser_lib.so"
+			],
+			"targetId" : "Parser_lib::@74bff9814a543eacbe93",
+			"targetIndex" : 2,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "Parser",
+		"source" : "Parser"
+	}
+}

@@ -11,6 +11,13 @@
 #include "Token.h"
 #include "TreeNode.h"
 
+struct Color_ptr {
+    std::shared_ptr<TreeNode>  R_ptr;
+    std::shared_ptr<TreeNode>  G_ptr;
+    std::shared_ptr<TreeNode>  B_ptr;
+};
+
+
 class Parser {
 public:
     Token fetchToken();
@@ -30,6 +37,8 @@ protected:
     virtual void rotType();
     virtual void scaleType();
     virtual void forType();
+    virtual void sizeType();
+    virtual void colorType();
 
     /**
         FOR T From start To end Step step_ptr Draw (x, y)
@@ -41,6 +50,8 @@ protected:
     std::shared_ptr<TreeNode>  x_ptr;
     std::shared_ptr<TreeNode>  y_ptr;
     std::shared_ptr<TreeNode>  angle_ptr;
+    std::shared_ptr<TreeNode> size_ptr;
+    Color_ptr color_ptr;
 
 private:
     /**

@@ -81,7 +81,7 @@ void Semantic::forType() {
     for(var = start;var <= end;var += step) {
         double x = getExpressionValue(x_ptr);
         double y = getExpressionValue(y_ptr);
-        Point p(x, y);
+        Point p(x, y, size, color);
         p.transform(origin_x, origin_y, rot_angle, scale_x, scale_y);
         Plotter::getInstance()->draw(p);
     }
@@ -91,6 +91,19 @@ void Semantic::scaleType() {
     Parser::scaleType();
     scale_x = getExpressionValue(x_ptr);
     scale_y = getExpressionValue(y_ptr);
+}
+
+void Semantic::sizeType() {
+    Parser::sizeType();
+    size = getExpressionValue(size_ptr);
+}
+
+void Semantic::colorType() {
+    Parser::colorType();
+    color.R = getExpressionValue(color_ptr.R_ptr);
+    color.G = getExpressionValue(color_ptr.G_ptr);
+    color.B = getExpressionValue(color_ptr.B_ptr);
+
 }
 
 void Semantic::bindVar(const std::shared_ptr<TreeNode> &root) {

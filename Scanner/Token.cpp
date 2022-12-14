@@ -15,6 +15,8 @@ const static Token TokenTable[] = {
         Token(FROM, "FROM", 0.0, std::make_shared<NoFunc>()),
         Token(TO, "TO", 0.0, std::make_shared<NoFunc>()),
         Token(T, "T", 0.0, std::make_shared<NoFunc>()),
+        Token(COLOR, "COLOR", 0.0, std::make_shared<NoFunc>()),
+        Token(SIZE, "SIZE", 0.0, std::make_shared<NoFunc>()),
         Token(STEP, "STEP", 0.0, std::make_shared<NoFunc>()),
         Token(DRAW, "DRAW", 0.0, std::make_shared<NoFunc>()),
         Token(FUNC, "COS", 0.0, std::make_shared<Cos>()),

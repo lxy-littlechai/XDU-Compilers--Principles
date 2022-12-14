@@ -13,6 +13,7 @@ public:
     ExceptionLog(std::string message);
     ExceptionLog(int errRow, int errColumn, std::string errType);
     void log();
+
 private:
     int errRow, errColumn;
     std::string errType, message;

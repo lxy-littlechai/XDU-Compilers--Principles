@@ -12,12 +12,15 @@ enum TokenType {
     /* reserve key */
     ORIGIN, SCALE, ROT, IS,
     TO, STEP, DRAW, FOR, FROM,
+    SIZE, COLOR,
     /* constant & parameter & FUNC*/
     CONST_ID, T, FUNC,
     /* separator */
     SEMICO, L_BRACKET, R_BRACKET, COMMA,
     /* operator */
     PLUS, MINUS, MUL, DIV, POWER,
+    /* color */
+    RED, BLUE, YELLOW,
     /* special */
     NO_TOKEN, ERR_TOKEN,
 };

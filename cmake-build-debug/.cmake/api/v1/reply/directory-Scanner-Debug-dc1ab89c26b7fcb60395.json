@@ -1,0 +1,45 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"Scanner/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 12,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "/home/littlechai/University/XDU-Compilers--Principles/lib",
+			"paths" : 
+			[
+				"Scanner/libScanner_lib.so"
+			],
+			"targetId" : "Scanner_lib::@32a5743141a4970811cd",
+			"targetIndex" : 5,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "Scanner",
+		"source" : "Scanner"
+	}
+}

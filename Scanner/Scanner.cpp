@@ -175,6 +175,13 @@ Token Scanner::getToken() {
         }
         token.token = buffer;
     }
+    try {
+        if(token.tokenType == TokenType::ERR_TOKEN) {
+            throw ExceptionLog(row, column, "ERR_TOKEN type");
+        }
+    } catch (ExceptionLog &e) {
+        e.log();
+    }
     return token;
 }
 

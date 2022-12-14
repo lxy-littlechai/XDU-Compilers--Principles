@@ -1,0 +1,79 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 10,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 12,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "/home/littlechai/University/XDU-Compilers--Principles/headers",
+			"paths" : 
+			[
+				"ExceptionLog/ExceptionLog.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "/home/littlechai/University/XDU-Compilers--Principles/lib",
+			"paths" : 
+			[
+				"libExceptionLog_lib.so"
+			],
+			"targetId" : "ExceptionLog_lib::@6890427a1f51a3e7e1df",
+			"targetIndex" : 0,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "/home/littlechai/University/XDU-Compilers--Principles/lib",
+			"paths" : 
+			[
+				"liballLib.so"
+			],
+			"targetId" : "allLib::@6890427a1f51a3e7e1df",
+			"targetIndex" : 8,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	}
+}

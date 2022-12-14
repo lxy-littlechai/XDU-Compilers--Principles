@@ -72,6 +72,14 @@ void Parser::judgeSentenceType() {
                 forType();
                 break;
             }
+            case TokenType::SIZE: {
+                sizeType();
+                break;
+            }
+            case TokenType::COLOR: {
+                colorType();
+                break;
+            }
             default: {
                 throw ExceptionLog(scanner.row, scanner.column, "Error in sentenceType");
             }
@@ -124,6 +132,25 @@ void Parser::forType() {
     matchToken(TokenType::COMMA);
     y_ptr = expression();
     matchToken(TokenType::R_BRACKET);
+}
+
+void Parser::sizeType() {
+    matchToken(TokenType::SIZE);
+    matchToken(TokenType::IS);
+    size_ptr = expression();
+}
+
+void Parser::colorType() {
+    matchToken(TokenType::COLOR);
+    matchToken(TokenType::IS);
+    matchToken(TokenType::L_BRACKET);
+    color_ptr.R_ptr = expression();
+    matchToken(TokenType::COMMA);
+    color_ptr.G_ptr = expression();
+    matchToken(TokenType::COMMA);
+    color_ptr.B_ptr = expression();
+    matchToken(TokenType::R_BRACKET);
+
 }
 
 // expression -> Term {(PLUS | MINUS) Term }
@@ -231,8 +258,7 @@ std::shared_ptr<TreeNode> Parser::Atom() {
                 break;
             }
             default: {
-
-                break;
+                throw ExceptionLog(scanner.row, scanner.column, "Err Sentence");
             }
         }
     } catch (ExceptionLog &e) {

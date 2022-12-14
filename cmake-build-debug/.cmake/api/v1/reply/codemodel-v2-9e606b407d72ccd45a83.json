@@ -1,0 +1,223 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f6621d8ff7f13da4603f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						3,
+						8
+					]
+				},
+				{
+					"build" : "Scanner",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Scanner-Debug-dc1ab89c26b7fcb60395.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "Scanner",
+					"targetIndexes" : 
+					[
+						4,
+						5
+					]
+				},
+				{
+					"build" : "Parser",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Parser-Debug-239c3c7f57b741bfe20b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "Parser",
+					"targetIndexes" : 
+					[
+						1,
+						2
+					]
+				},
+				{
+					"build" : "Semantic",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Semantic-Debug-6d79862e7ab1b98396b7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "Semantic",
+					"targetIndexes" : 
+					[
+						6,
+						7
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Plotter_interpreter",
+					"targetIndexes" : 
+					[
+						0,
+						3,
+						8
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "Scanner",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4,
+						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "Parser",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "Semantic",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						6,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ExceptionLog_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ExceptionLog_lib-Debug-a40fcf25665cc8dfaed6.json",
+					"name" : "ExceptionLog_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "Parser::@74bff9814a543eacbe93",
+					"jsonFile" : "target-Parser-Debug-e793d858c96942a2ac02.json",
+					"name" : "Parser",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "Parser_lib::@74bff9814a543eacbe93",
+					"jsonFile" : "target-Parser_lib-Debug-22f94d3ab7609f869d12.json",
+					"name" : "Parser_lib",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Plotter_interpreter::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Plotter_interpreter-Debug-20fc22409e8a35c526c2.json",
+					"name" : "Plotter_interpreter",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Scanner::@32a5743141a4970811cd",
+					"jsonFile" : "target-Scanner-Debug-0035cc8c12848fafc914.json",
+					"name" : "Scanner",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Scanner_lib::@32a5743141a4970811cd",
+					"jsonFile" : "target-Scanner_lib-Debug-4e2573e3738ec3d94f6f.json",
+					"name" : "Scanner_lib",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "Semantic::@83053809dc2ab0aad623",
+					"jsonFile" : "target-Semantic-Debug-347fab086ed892f6afd2.json",
+					"name" : "Semantic",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "Semantic_lib::@83053809dc2ab0aad623",
+					"jsonFile" : "target-Semantic_lib-Debug-0eb216cb207995b14b45.json",
+					"name" : "Semantic_lib",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "allLib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-allLib-Debug-883711f0d1c5a3e63002.json",
+					"name" : "allLib",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/littlechai/University/XDU-Compilers--Principles/cmake-build-debug",
+		"source" : "/home/littlechai/University/XDU-Compilers--Principles"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

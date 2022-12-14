@@ -16,7 +16,7 @@ std::shared_ptr<Plotter> Plotter::getInstance() {
 void Plotter::draw(Point p) {
 
     cv::Point center = cv::Point (p.x, p.y);
-    cv::circle(picture, center, 1, cv::Scalar(0,0,0), -1);
+    cv::circle(picture, center, p.size, cv::Scalar(p.color.R,p.color.G,p.color.B), -1);
 }
 
 void Plotter::show() {

@@ -5,9 +5,11 @@
 #include <cmath>
 #include "Point.h"
 
-Point::Point(double x, double y) {
+Point::Point(double x, double y, int size, Color color) {
     this->x = x;
     this->y = y;
+    this->size = size;
+    this->color = color;
 }
 
 void Point::transform(double origin_x, double origin_y, double rot_angle, double scale_x, double scale_y) {
